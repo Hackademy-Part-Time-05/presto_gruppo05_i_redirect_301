@@ -16,13 +16,13 @@
             @else
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{ auth()->user()->email }}
+                {{ auth()->user()->name }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="btn btn-sm btn-danger ms-2">Esci</button>
+                        <button type="submit" class="btn btn-sm ms-2">Esci</button>
                     </form>
                 </li>
                 @endguest

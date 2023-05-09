@@ -11,7 +11,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
-
 class FortifyServiceProvider extends ServiceProvider
 {
     /**
@@ -43,11 +42,11 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::loginView(function () {
-            return view('auth.login ');
+            return view('auth.login');
         });
 
         Fortify::registerView(function () {
-            return view('auth.register ');
+            return view('auth.register');
         });
     }
 }
