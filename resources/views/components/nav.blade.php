@@ -18,6 +18,9 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ auth()->user()->name }}
               </a>
+              <li class="nav-item">
+                <a href="#" class="btn btn-primary">Crea Annuncio</a>
+              </li>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                     <form action="/logout" method="POST">
