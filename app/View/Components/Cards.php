@@ -11,9 +11,11 @@ class Cards extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $latestAnnouncement;
+    public function __construct($latestAnnouncement)
     {
-        //
+
+        $this->latestAnnouncement=$latestAnnouncement;
     }
 
     /**

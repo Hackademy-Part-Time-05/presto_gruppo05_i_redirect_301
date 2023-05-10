@@ -13,6 +13,7 @@
   <body>
     <x-nav/>
     {{$slot}}
+
     <x-footer/>
     @livewireScripts
     <script src="/js/script.js"></script>
