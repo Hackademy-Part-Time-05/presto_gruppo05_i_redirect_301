@@ -19,4 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/nuovo/annuncio',[AnnouncementControlle::class, 'createAnnouncement'])->name('announcements.create');
+Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncements'])->name('announcements.create');

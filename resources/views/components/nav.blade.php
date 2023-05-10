@@ -14,13 +14,13 @@
               <a class="nav-link" href="/login">Accedi</a>
             </li>
             @else
+            <li class="nav-item">
+              <a href="{{route('announcements.create')}}"><button class="btn ms-lg-2 ms-4">+ Crea Annuncio</button></a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ auth()->user()->name }}
               </a>
-              <li class="nav-item">
-                <a href="#" class="btn btn-primary">Crea Annuncio</a>
-              </li>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                     <form action="/logout" method="POST">

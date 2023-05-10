@@ -1,5 +1,5 @@
 <footer>
-    <div class="container-fluid my-5">
+    <div class="container-fluid pt-5">
       <footer class="text-center text-lg-start text-dark bg-light pt-2">
         <section class="">
           <div class="container text-center text-md-start mt-5">
@@ -55,5 +55,4 @@
               </div>
             </div>
           </div>
-        </section>
       </footer>

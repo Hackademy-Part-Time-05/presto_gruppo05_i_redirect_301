@@ -7,24 +7,24 @@
               <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crea il tuo annuncio! </p>
-                  <form class="mx-1 mx-md-4" wire:submti.prevent="store">
+                  <form class="mx-1 mx-md-4" wire:submit.prevent="store">
                     @csrf
                     <div class="d-flex flex-row align-items-center mb-4">
                       <div class="form-outline flex-fill mb-0">
-                        <input wire:model="title" type="text" class="form-controll"/>
                         <label for="title">Titolo Annuncio</label>
+                        <input wire:model="title" type="text" class="form-controll"/>
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
+                          <label for="body">Descrizione</label>
                             <textarea wire:model="body" type="text" class="form-controll"></textarea>
-                            <label for="body">Descrizione</label>
                           </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
-                            <textarea wire:model="price" type="number" class="form-controll"></textarea>
-                            <label for="price">Prezzo</label>
+                          <label for="price">Prezzo</label>
+                            <input wire:model="price" type="number" class="form-controll">
                           </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
