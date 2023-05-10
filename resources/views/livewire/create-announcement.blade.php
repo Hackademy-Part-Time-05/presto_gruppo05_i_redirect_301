@@ -18,6 +18,7 @@
                       <div class="form-outline flex-fill mb-0">
                         <label for="category">Categoria</label>
                          <select wire:model.defer="category" id="category" class=" @error('title') is-invalid @enderror">
+                          <option value="">Seleziona</option>
                           @foreach ($categories as $category)
                             <option value="{{$category->id}}"> {{$category->name}}</option>
                           @endforeach
