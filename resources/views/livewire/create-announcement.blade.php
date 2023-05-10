@@ -6,25 +6,56 @@
             <div class="card-body p-md-5">
               <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                  @if(session()->has('message'))
+                    <div class="flex flex-row justify-center my-2 alert alert-success">
+                      {{session('message')}}
+                    </div>
+                  @endif
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crea il tuo annuncio! </p>
                   <form class="mx-1 mx-md-4" wire:submit.prevent="store">
                     @csrf
                     <div class="d-flex flex-row align-items-center mb-4">
                       <div class="form-outline flex-fill mb-0">
+                        <label for="category">Categoria</label>
+                         <select wire:model.defer="category" id="category" class=" @error('title') is-invalid @enderror">
+                          @foreach ($categories as $category)
+                            <option value="{{$category->id}}"> {{$category->name}}</option>
+                          @endforeach
+                        </select> 
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <div class="form-outline flex-fill mb-0">
                         <label for="title">Titolo Annuncio</label>
-                        <input wire:model="title" type="text" class="form-controll"/>
+                        <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror"/>
+                        @error('title')
+                        <div class=" text-danger">
+                          {{$message}}
+                        </div> 
+                        @enderror
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
                           <label for="body">Descrizione</label>
-                            <textarea wire:model="body" type="text" class="form-controll"></textarea>
+                            <textarea wire:model="body" type="text" class="form-control @error('body') is-invalid @enderror"></textarea>
+                            @error('body')
+                            <div class=" text-danger">
+                              {{$message}}
+                            </div> 
+                            @enderror
                           </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
                           <label for="price">Prezzo</label>
-                            <input wire:model="price" type="number" class="form-controll">
+                            <input wire:model="price" type="number" class="form-control @error('price') is-invalid @enderror">
+
+                            @error('price')
+                            <div class=" text-danger">
+                              {{$message}}
+                            </div> 
+                            @enderror
                           </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
