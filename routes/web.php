@@ -17,5 +17,6 @@ use Laravel\Fortify\Fortify;
 */
 
 Route::get('/', [Frontcontroller::class, 'welcome'])->name('welcome');
+Route::get('/categoria/{category}', [Frontcontroller::class, 'categoryShow'])->name('categoryShow');
 
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncements'])->middleware('auth')->name('announcements.create');
