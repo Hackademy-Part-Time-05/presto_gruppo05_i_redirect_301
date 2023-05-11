@@ -13,3 +13,14 @@
 .productCard:hover {
   transform:scale(1.1);
 }
+/* Footer */
+.nav-link{
+  text-decoration: none;
+}
+.linkveloci{
+  transition: transform ease-out 300ms;
+}
+
+.linkveloci:hover{
+  transform: translateX(8px);
+}
