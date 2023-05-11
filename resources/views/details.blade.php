@@ -9,9 +9,9 @@
         </div>
       </header>
       <div class="container">
-        <div class="card mt-3">
-          <div class="card-body">
               @forelse ($category->announcements as $announcement )
+              <div class="card mt-3 mb-3">
+                <div class="card-body">
               <h3 class="card-title text-center">{{$announcement->title}}</h3>
               <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-6">
@@ -22,21 +22,18 @@
                 <h2 class="mt-5">
                   {{$announcement->price}}<small class="text-success">(50% di sconto)</small>
                 </h2>
-                <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title=""
-                  data-original-title="Add to cart">
-                  <i class="fa fa-shopping-cart"></i>
-                </button>
-                <button class="btn btn-primary btn-rounded">Compra ora!</button>
+                <button class="btn btn-primary btn-rounded"><a href=""></a> Compra ora!</button>
                 <h3 class="box-title mt-5">Pubblicato il:</h3>
                 <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
               </div>
             </div>
+          </div>
+        </div>
             @empty
               <div class="col-12">
                 <p class="h1">Non sono presenti annunci per questa categoria!</p>
                 <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btn-success shadow">Nuovo Annuncio</a></p>
               </div>
             @endforelse
-          </div>
-        </div>
+      </div>
 </x-main>
