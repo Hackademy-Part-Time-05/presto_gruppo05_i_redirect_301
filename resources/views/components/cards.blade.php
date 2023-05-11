@@ -6,8 +6,8 @@
       <h5 class="card-title">{{$latestAnnouncement->title}}</h5>
       <p class="card-text">{{$latestAnnouncement->price}}</p>
       <p class="card-text">{{$latestAnnouncement->body}}</p>
-      <a href="#" class="btn btn-primary shadow">{{$latestAnnouncement->category->name}}</a><a href="#"
-        class="my-2 border-top pt-2 border-dark card-link shadow btn btn-success">Go somewhere</a>
+      <a href="#" class="btn btn-primary shadow m-1">{{$latestAnnouncement->category->name}}</a>
+      <a href="{{route('announcements.details',compact('latestAnnouncement'))}}"class="my-2 border-top pt-2  card-link shadow btn btn-success">Visualizza</a>
       <p>Pubblicato il: {{$latestAnnouncement->created_at}}</p>
       <p>Caricato da: {{$latestAnnouncement->user->name}}</p>
     </div>
