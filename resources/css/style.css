@@ -1,0 +1,15 @@
+/* Card */
+.productCard {
+  position: relative;
+  min-width:50px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+}
+.productCard:hover {
+  transform:scale(1.1);
+}
