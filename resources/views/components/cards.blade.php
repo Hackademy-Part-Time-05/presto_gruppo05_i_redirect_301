@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-4 my4 pt-5">
+    <div class="col-12 col-md-4 my-4 pt-5">
       <div class="card productCard" style="width: 18rem;">
         <img src="https://picsum.photos/200" class="card-img-top p-3 rounded" alt="...">
         <div class="card-body">
