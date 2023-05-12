@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start text-dark bg-light pt-2">
+<footer class="text-center text-lg-start text-dark bg-light pt-2 mt-5">
   <section class="">
     <div class="container text-center text-md-start mt-5">
       <div class="row mt-3">
