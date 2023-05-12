@@ -8,46 +8,25 @@
           </div>
         </div>
       </header>
-      <div class="container">
-      <div class="row">              
+      <div class="container cards_landscape_wrap-2">
+        <div class="row">             
         @forelse ($category->announcements as $announcement )
-        <section class="mx-auto my-5" style="max-width: 23rem;">
-          <div class="card productCard">
-            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-              <img src="https://picsum.photos/400" class="img-fluid" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title ">{{$announcement->title}}</h3>
-              <ul class="list-unstyled list-inline mb-0">
-                <li class="list-inline-item me-0">
-                  <i class="fas fa-star text-warning fa-xs"> </i>
-                </li>
-                <li class="list-inline-item me-0">
-                  <i class="fas fa-star text-warning fa-xs"></i>
-                </li>
-                <li class="list-inline-item me-0">
-                  <i class="fas fa-star text-warning fa-xs"></i>
-                </li>
-                <li class="list-inline-item me-0">
-                  <i class="fas fa-star text-warning fa-xs"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fas fa-star-half-alt text-warning fa-xs"></i>
-                </li>
-                <li class="list-inline-item">
-                  <p class="text-muted">4.5 (413)</p>
-                </li>
-              </ul>
-              <p class="mb-2">{{$announcement->price}}</p>
-              <p class="card-text">
-                <p>{{$announcement->body}}</p>
-              </p>
-              <hr class="my-4"/>
-              <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
-              <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Visualizza</a>
-            </div>
-          </div>
-        </section>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                      <div class="card-flyer">
+                          <div class="text-box">
+                              <div class="image-box">
+                                  <img src="https://picsum.photos/400" class="img-fluid" alt="" />
+                              </div>
+                              <div class="text-container">
+                                  <h6>{{$announcement->title}}</h6>
+                                  <p>{{$announcement->body}}</p>
+                                  <hr class="my-4"/>
+                                  <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
+                                  <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Visualizza</a>
+                              </div>
+                          </div>
+                      </div>
+              </div>
                 @empty
                   <div class="col-12">
                     <p class="h1">Non sono presenti annunci per questa categoria!</p>
