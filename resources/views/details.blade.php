@@ -10,23 +10,8 @@
       </header>
       <div class="container cards_landscape_wrap-2">
         <div class="row">             
-        @forelse ($category->announcements as $announcement )
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                  <img src="https://picsum.photos/400" class="img-fluid" alt="" />
-                              </div>
-                              <div class="text-container">
-                                  <h6>{{$announcement->title}}</h6>
-                                  <p>{{$announcement->body}}</p>
-                                  <hr class="my-4"/>
-                                  <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
-                                  <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Visualizza</a>
-                              </div>
-                          </div>
-                      </div>
-              </div>
+        @forelse ($category->announcements as $latestAnnouncement )
+          <x-cards :$latestAnnouncement :category='$latestAnnouncement->category'></x-cards>
                 @empty
                   <div class="col-12">
                     <p class="h1">Non sono presenti annunci per questa categoria!</p>
