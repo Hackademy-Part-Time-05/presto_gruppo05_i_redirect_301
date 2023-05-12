@@ -9,31 +9,51 @@
         </div>
       </header>
       <div class="container">
-              @forelse ($category->announcements as $announcement )
-              <div class="card mt-3 mb-3">
-                <div class="card-body">
-              <h3 class="card-title text-center">{{$announcement->title}}</h3>
-              <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-6">
-                <div class="white-box text-center"><img src="https://picsum.photos/400" class="img-fluid"></div>
-              </div>
-              <div class="col-lg-7 col-md-7 col-sm-6">
+      <div class="row">              
+        @forelse ($category->announcements as $announcement )
+        <section class="mx-auto my-5" style="max-width: 23rem;">
+          <div class="card productCard">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="https://picsum.photos/400" class="img-fluid" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title ">{{$announcement->title}}</h3>
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs"> </i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs"></i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs"></i>
+                </li>
+                <li class="list-inline-item me-0">
+                  <i class="fas fa-star text-warning fa-xs"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+                </li>
+                <li class="list-inline-item">
+                  <p class="text-muted">4.5 (413)</p>
+                </li>
+              </ul>
+              <p class="mb-2">{{$announcement->price}}</p>
+              <p class="card-text">
                 <p>{{$announcement->body}}</p>
-                <h2 class="mt-5">
-                  {{$announcement->price}}<small class="text-success">(50% di sconto)</small>
-                </h2>
-                <button class="btn btn-primary btn-rounded"><a href=""></a> Compra ora!</button>
-                <h3 class="box-title mt-5">Pubblicato il:</h3>
-                <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
-              </div>
+              </p>
+              <hr class="my-4"/>
+              <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
+              <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Visualizza</a>
             </div>
           </div>
-        </div>
-            @empty
-              <div class="col-12">
-                <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btn-success shadow">Nuovo Annuncio</a></p>
+        </section>
+                @empty
+                  <div class="col-12">
+                    <p class="h1">Non sono presenti annunci per questa categoria!</p>
+                    <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btn-success shadow">Nuovo Annuncio</a></p>
+                  </div>
+                @endforelse
               </div>
-            @endforelse
       </div>
 </x-main>
