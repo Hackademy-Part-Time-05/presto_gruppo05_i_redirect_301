@@ -3,7 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Announcement;
 use Illuminate\Database\Seeder;
+use Nette\Utils\Random;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        for($i = 0; $i < 100; $i++) {
+            Announcement::create(['title' => 'Annuncio '.$i, 'category_id' => rand(1,10), 'body' => 'Testo '.$i.' Subtesto abc '.(100-$i), 'price' => $i]);
+        }
     }
 }
