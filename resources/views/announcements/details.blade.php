@@ -49,7 +49,7 @@
             <hr>
             <p>Pubblicato il:</p>
             <p>{{$latestAnnouncement->created_at->format('d/m/Y')}} - Autore:{{$latestAnnouncement->user->name ?? ''}}</p>
-            <a href="{{route('categoryShow',['category'=>$latestAnnouncement->category])}}"><button class="btn btn-dark w-100 m-1">Esplora la categoria: {{$latestAnnouncement->category->name}}
+            <a href="{{route('categoryShow',['category'=>$latestAnnouncement->category])}}"><button class="btn btnHeader btn-dark btn-animated w-100 m-1">Esplora la categoria: {{$latestAnnouncement->category->name}}
             </button></a>
           </div>
         </div>
