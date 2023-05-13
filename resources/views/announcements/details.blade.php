@@ -10,7 +10,10 @@
       </header>
     <div class="container mt-5 mb-5 ">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-6">
+
+          {{-- --------Old photocarousel--------- --}}
+
+          {{-- <div class="col-lg-5 col-md-5 col-sm-6">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
@@ -32,8 +35,13 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </div>
-          <div class="col-lg-7 col-md-7 col-sm-6">
+          </div> --}}
+
+          {{-- --------End Old photocarousel--------- --}}
+          
+          <x-carousel></x-carousel>
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
             <h5 class="col-lg-7 col-md-7 col-sm-6 mt-5">{{$latestAnnouncement->category->name}}</h5>
             <h2 class="col-lg-7 col-md-7 col-sm-6">{{$latestAnnouncement->title}}</h2>
             <div class="col-lg-7 col-md-7 col-sm-6">
