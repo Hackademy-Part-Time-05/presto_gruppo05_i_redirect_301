@@ -15,7 +15,7 @@
                 @empty
                   <div class="col-12">
                     <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                    <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btn-success shadow">Nuovo Annuncio</a></p>
+                    <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btn-dark shadow">Nuovo Annuncio</a></p>
                   </div>
                 @endforelse
               </div>

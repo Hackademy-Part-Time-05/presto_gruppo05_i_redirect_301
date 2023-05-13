@@ -60,7 +60,7 @@
                           </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="submit" class="btn btn-primary btn-lg">Conferma tuo annuncio!</button>
+                      <button type="submit" class="btn btn-dark btn-lg">Conferma tuo annuncio!</button>
                     </div>
                   </form>
                 </div>
