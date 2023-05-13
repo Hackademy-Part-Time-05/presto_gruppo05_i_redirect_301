@@ -13,6 +13,14 @@
   --animali:#2B9EB3;
   --market: #E99234;
 }
+/* navbar */
+.navbar{
+  transition: all 0.5s;
+}
+.navbar-scrolled{
+  background-color: #000000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
 
 /* Card */
 

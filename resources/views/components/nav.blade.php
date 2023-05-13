@@ -1,27 +1,27 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/">Presto.it</a>
+      <a class="navbar-brand text-white" href="/">Presto.it</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
             @guest
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorie
               </a>    
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu ">
                 @foreach ($categories as $category)
                 <li><a class="dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{$category->name}}</a></li>
                 @endforeach
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/register">Registrati</a>
+              <a class="nav-link text-white" href="/register">Registrati</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/login">Accedi</a>
+              <a class="nav-link text-white" href="/login">Accedi</a>
             </li>
             @else
             <li class="nav-item">
