@@ -1,3 +1,19 @@
+/*color*/
+:root{
+  --primario-presto:black;
+  --contrasto-primario-presto:white;
+  --motori:#C1292E;
+  --immobili:#B0906C;
+  --lavoro:#2C33B1;
+  --sport:#ACC12F;
+  --fotografia:#BA3365;
+  --informatica: #FFED00;
+  --abbigliamento:#F9ADA0;
+  --musica:#186260;
+  --animali:#2B9EB3;
+  --market: #E99234;
+}
+
 /* Card */
 
 .productCard {
