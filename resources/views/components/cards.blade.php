@@ -23,6 +23,7 @@
           <div class="text-container">
               <h6>{{$latestAnnouncement->title}}</h6>
               <p>{{$latestAnnouncement->body}}</p>
+              <p>{{$latestAnnouncement->price}}€</p>
               <hr class="my-4"/>
               <p>{{$latestAnnouncement->created_at->format('d/m/Y')}} - Inserito da:{{$latestAnnouncement->user->name}}</p>
               <a href="{{route('announcements.details',compact('latestAnnouncement'))}}" class="btn btn-link link-secondary p-md-1 mb-0">Visualizza</a>
