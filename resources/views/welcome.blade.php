@@ -1,5 +1,9 @@
 <x-main>
-
+    <div class="container mt-5">
+        <div class="row">
+            <h1 class="col-4 mx-auto">Ecco i nostri annunci</h1>
+        </div>
+    </div>
     {{-- <div class="w-100">
         @foreach ($categories as $category)
             {{$category}}
