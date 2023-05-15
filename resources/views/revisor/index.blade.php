@@ -3,7 +3,7 @@
         <div class="container ">
           <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12  pb-5 order-2 order-sm-2 ">
-              <h1 class=" mb-3 mt-5 display-3 text-white">{{$announcement_to_check}}</h1>
+              <h1 class=" mb-3 mt-5 display-3 text-white">Pagina di revisione</h1>
             </div>
           </div>
         </div>
@@ -14,7 +14,7 @@
           <x-carousel></x-carousel>
 
           <div class="col-lg-6 col-md-6 col-sm-6">
-            <h5 class="col-lg-7 col-md-7 col-sm-6 mt-5">{{$latestAnnouncement->category->name}}</h5>
+            <h5 class="col-lg-7 col-md-7 col-sm-6 mt-5">{{$announcement_to_check->category->name}}</h5>
             <h2 class="col-lg-7 col-md-7 col-sm-6">{{$announcement_to_check->title}}</h2>
             <div class="col-lg-7 col-md-7 col-sm-6">
               <h2> {{$announcement_to_check->price}}</H2>
