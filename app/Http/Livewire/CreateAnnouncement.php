@@ -7,6 +7,7 @@ use App\Models\Category;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use App\Models\User;
 
 class CreateAnnouncement extends Component
 {
@@ -40,9 +41,9 @@ class CreateAnnouncement extends Component
         ]);
 
         Auth::user()->announcements()->save($announcement);
-
         session()->flash('message', 'Hai inserito con successo il tuo annuncio!');
-        $this->cleanForm();       
+        $this->cleanForm();
+        
     }
 
     public function updated($propertyName) {

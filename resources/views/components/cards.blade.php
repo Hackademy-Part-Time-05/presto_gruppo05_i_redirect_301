@@ -1,19 +1,3 @@
-{{-- 
-  <div class="col-12 col-md-4 my-4 pt-5">
-    <div class="card productCard" style="width: 18rem;">
-      <img src="https://picsum.photos/200" class="card-img-top p-3 rounded" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{$latestAnnouncement->title}}</h5>
-        <p class="card-text">{{$latestAnnouncement->price}}</p>
-        <p class="card-text">{{$latestAnnouncement->body}}</p>
-        <a href="#" class="btn btn-primary shadow m-1">{{$latestAnnouncement->category->name}}</a>
-        <a href="{{route('announcements.details',compact('latestAnnouncement'))}}"class="my-2 border-top pt-2  card-link shadow btn btn-success">Visualizza</a>
-        <p>Pubblicato il: {{$latestAnnouncement->created_at}}</p>
-        <p>Caricato da: {{$latestAnnouncement->user->name}}</p>
-      </div>
-    </div>
-  </div> --}}
-  
   {{-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 .action">
     <div class="card-flyer .action">
       <div class="text-box .action">
@@ -34,24 +18,6 @@
   </div> --}}
   
   
-  {{-- 
-    <div class="wrapper-card col-xs-12 col-sm-6 col-md-3 col-lg-3 position-relative g-5">
-      <div class="mt-0 ml-0 background-coloured-card {{$latestAnnouncement->category->name}}_background">
-        <a class='category-card-button' href="{{ route('categoryShow', compact('category')) }}">
-          <h2 class="category_name_card">
-            {{$latestAnnouncement->category->name}}
-          </h2>
-        </a>
-      </div>
-      <div class="content-main-card position-absolute mb-0">
-        <figure class="figure-container">
-          <img src="https://picsum.photos/{{150+$latestAnnouncement->id}}/120" alt="">
-        </figure>
-        
-      </div>
-      
-      
-    </div> --}}
     <div class="col-md-8 g-3">
       <div class="row p-2 bg-white border rounded wrapper-shadow">
         <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://picsum.photos/200/{{200+$latestAnnouncement->id}}"></div>

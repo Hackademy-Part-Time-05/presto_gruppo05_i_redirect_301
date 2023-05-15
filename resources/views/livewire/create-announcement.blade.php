@@ -1,11 +1,12 @@
-<header class="header">
+<div>
+  <header class="header">
   <div class="text-header">
     <h1 class="heading-primary">
       <span class="heading-primary-main">Benvenuto su presto.it!</span>
     </h1>
   </div>
-</header>
-<section class=" mt-5">
+  </header>
+  <section class=" mt-5">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -67,7 +68,7 @@
                           </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="submit" class="btn btnHeader btn-dark btn-animated">Conferma tuo annuncio!</button>
+                      <button type="submit" class="btn btnHeader btn-dark btn-animated">Conferma il tuo annuncio!</button>
                     </div>
                   </form>
                 </div>
@@ -82,3 +83,4 @@
       </div>
     </div>
   </section>
+</div>
