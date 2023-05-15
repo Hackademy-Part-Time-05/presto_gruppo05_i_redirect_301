@@ -137,14 +137,14 @@
   height: 100vh;
   background-image: 
   linear-gradient(to right bottom, 
-   rgba(196, 214, 219, 0.8),
-   rgba(30, 108, 217, 0.8)),
-   url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg');
+  rgba(196, 214, 219, 0.8),
+  rgba(30, 108, 217, 0.8)),
+  url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg');
   
   background-size: cover;
   background-position: top;
   position: relative;
-
+  
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -167,7 +167,7 @@
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-
+  
   backface-visibility: hidden;
   margin-bottom: 30px;
 }
@@ -210,7 +210,7 @@
 .btnHeader-white {
   background-color: #fff;
   color: #777;
-font-size: 14px;
+  font-size: 14px;
 }
 
 

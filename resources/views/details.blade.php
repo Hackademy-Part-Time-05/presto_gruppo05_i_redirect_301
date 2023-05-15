@@ -1,5 +1,5 @@
 <x-main>
-    <header class="pt-5 pb-5  align-items-center d-flex bg-dark">
+    <header class="pt-5 pb-5  align-items-center d-flex bg-dark {{$category->name}}_background ">
         <div class="container ">
           <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12  pb-5 order-2 order-sm-2 ">

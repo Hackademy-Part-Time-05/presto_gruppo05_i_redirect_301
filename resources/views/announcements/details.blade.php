@@ -3,7 +3,7 @@
         <div class="container ">
           <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12  pb-5 order-2 order-sm-2 ">
-              <h1 class=" mb-3 mt-5 display-3 text-white">Home->{{$latestAnnouncement->category->name}}->{{$latestAnnouncement->title}}</h1>
+              <h1 class=" mb-3 mt-5 display-6 fs-3 text-white">Home - {{$latestAnnouncement->category->name}} - {{$latestAnnouncement->title}}</h1>
             </div>
           </div>
         </div>
