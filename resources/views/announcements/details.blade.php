@@ -3,7 +3,7 @@
         <div class="container ">
           <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12  pb-5 order-2 order-sm-2 ">
-              <h1 class=" mb-3 mt-5 display-6 fs-3 text-white">Home - {{$latestAnnouncement->category->name}} - {{$latestAnnouncement->title}}</h1>
+              <h1 class=" mb-3 mt-5 display-6 fs-3 text-white">Home - {{$announcement->category->name}} - {{$announcement->title}}</h1>
             </div>
           </div>
         </div>
@@ -42,22 +42,22 @@
           <x-carousel></x-carousel>
 
           <div class="col-lg-6 col-md-6 col-sm-6">
-            <h5 class="col-lg-7 col-md-7 col-sm-6 mt-5">{{$latestAnnouncement->category->name}}</h5>
-            <h2 class="col-lg-7 col-md-7 col-sm-6">{{$latestAnnouncement->title}}</h2>
+            <h5 class="col-lg-7 col-md-7 col-sm-6 mt-5">{{$announcement->category->name}}</h5>
+            <h2 class="col-lg-7 col-md-7 col-sm-6">{{$announcement->title}}</h2>
             <div class="col-lg-7 col-md-7 col-sm-6">
-              <h2> {{$latestAnnouncement->price}}</H2>
+              <h2> {{$announcement->price}}</H2>
                 <h3>IVA ESCLUSA</h3>
                 <p>11,71€Pz IVA inclusa</p>
             </div>
             <div>
               <p>
-                {{$latestAnnouncement->body}}
+                {{$announcement->body}}
               </p>
             </div>
             <hr>
             <p>Pubblicato il:</p>
-            <p>{{$latestAnnouncement->created_at->format('d/m/Y')}} - Autore:{{$latestAnnouncement->user->name ?? ''}}</p>
-            <a href="{{route('categoryShow',['category'=>$latestAnnouncement->category])}}"><button class="btn btnHeader btn-dark btn-animated w-100 m-1">Esplora la categoria: {{$latestAnnouncement->category->name}}
+            <p>{{$announcement->created_at->format('d/m/Y')}} - Autore:{{$announcement->user->name ?? ''}}</p>
+            <a href="{{route('categoryShow',['category'=>$announcement->category])}}"><button class="btn btnHeader btn-dark btn-animated w-100 m-1">Esplora la categoria: {{$announcement->category->name}}
             </button></a>
           </div>
         </div>

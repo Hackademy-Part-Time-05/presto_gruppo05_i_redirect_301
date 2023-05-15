@@ -12,7 +12,13 @@ class AnnouncementController extends Controller
         return view('announcements.create');
     }
 
-    public function showAnnouncement(Announcement $latestAnnouncement){
-        return view('announcements.details', compact('latestAnnouncement'));
+    public function showAnnouncement(Announcement $announcement){
+        return view('announcements.details', compact('announcement'));
+    }
+
+    public function indexAnnouncement()
+    {
+        $announcements=Announcement::where('is_accepted', true)->paginate(6);
+        return view('announcements.index', compact('announcements'));
     }
 }

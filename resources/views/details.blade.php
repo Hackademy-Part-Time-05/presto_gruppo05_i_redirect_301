@@ -10,8 +10,8 @@
       </header>
       <div class="container cards_landscape_wrap-2">
         <div class="row">             
-        @forelse ($category->announcements as $latestAnnouncement )
-          <x-cards :$latestAnnouncement :category='$latestAnnouncement->category'></x-cards>
+        @forelse ($category->announcements as $announcement )
+          <x-cards :$announcement :category='$announcement->category'></x-cards>
                 @empty
                   <div class="col-12">
                     <p class="h1">Non sono presenti annunci per questa categoria!</p>
