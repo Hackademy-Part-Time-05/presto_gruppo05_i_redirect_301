@@ -19,8 +19,8 @@
   
   
     <div class="col-md-8 g-3">
-      <div class="row p-2 bg-white border rounded wrapper-shadow">
-        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://picsum.photos/200/{{200+$announcement->id}}"></div>
+      <div class="row p-2 bg-white border rounded-5 wrapper-shadow">
+        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image rounded-4" src="https://picsum.photos/200/{{200+$announcement->id}}"></div>
         <div class="col-md-6 mt-1">
           <h5>{{$announcement->title}}</h5>
           <div class="d-flex flex-row">
@@ -36,8 +36,8 @@
           </div>
             <h6 class="text-success">Spedizione Gratuita</h6>
             <div class="d-flex flex-column mt-4">
-              <a href="{{route('announcements.details',compact('announcement'))}}" class="btn btn-primary btn-sm" type="button">Dettagli</a>
-              <a href="{{ route('categoryShow', compact('category')) }}" class="btn btn-outline-primary btn-sm mt-2 {{$announcement->category->name}}_background_card" type="button">{{$announcement->category->name}}</a>
+              <a href="{{route('announcements.details',compact('announcement'))}}" class="btn buttonRound btn-primary btn-sm" type="button" >Dettagli</a>
+              <a href="{{ route('categoryShow', compact('category')) }}" class="btn btn-outline-primary btn-sm mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{$announcement->category->name}}</a>
             </div>
           </div>
         </div>
