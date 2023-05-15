@@ -27,6 +27,15 @@
             <li class="nav-item">
               <a href="{{route('announcements.create')}}"><button class="btn ms-lg-2 ms-4 text-primary">+ Crea Annuncio</button></a>
             </li>
+            @if (Auth::user()->is_revisor)
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-success btn-sm position-relative" aria-current="page" href="{{route('revisor.index')}}">
+                Zona revisore
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}
+                <span class="visually-hidden">unread message</span></span>
+              </a>
+              </li>
+            @endif
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorie
