@@ -24,7 +24,7 @@
             <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> lorem</a>
           </p>
           <p class="linkveloci">
-            <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> lorem</a>
+            <a href="{{route('become.revisor')}}" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Diventa revisore</a>
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
