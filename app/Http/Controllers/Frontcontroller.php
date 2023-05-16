@@ -19,4 +19,10 @@ class Frontcontroller extends Controller
         $announcements = $category->announcements()->where('is_accepted', true)->get();
         return view('details', compact('category', 'announcements'));
     }
+
+    public function searchAnnouncement(Request $request)
+    {
+        $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
+        return view('announcements.index', compact( 'announcements'));
+    }
 }

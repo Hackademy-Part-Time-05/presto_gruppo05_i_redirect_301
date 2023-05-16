@@ -24,7 +24,7 @@
         <div class="col-md-6 mt-1">
           <h5>{{$announcement->title}}</h5>
           <div class="d-flex flex-row">
-            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>{{$announcement->id}}</span>
+            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
           </div>
           <div class="mt-1 mb-1 spec-1"><span>Inserito da <em>{{$announcement->user->name}}</em> </span></div>
           <div class="mt-1 mb-1 spec-1"><span>in data {{$announcement->created_at->format('d/m/Y')}}</span></div>
