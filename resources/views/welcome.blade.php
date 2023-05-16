@@ -1,4 +1,9 @@
 <x-main>
+    @if(session()->has('access.denied'))
+    <div class="flex flex-row justify-center my-2 alert alert-warning">
+        {{session('access.denied')}}
+    </div>
+    @endif
     <x-header/>
     {{-- <div class="w-100">
         @foreach ($categories as $category)
