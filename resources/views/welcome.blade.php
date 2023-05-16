@@ -5,15 +5,14 @@
     </div>
     @endif
     <x-header/>
-    <section class="pt-4">
-        <div class="container">
-            <div class=" col-5 col-xs-3 col-sm-3 col-md-3 col-lg-2 border welcome-card_link welcome-card_link">
-                <div class="welcome-card_bg"></div>
-                <div class=" text-center ">
-                 <a href="" class="welcome-card_title">Motori</a>
-                </div>
-            </div>  
-        </div>   
+    <section class="pt-4 container">
+        <div class="row justify-content-center pb-5">
+            @foreach ($categories as $category)
+                <x-category-button :$category>
+                </x-category-button>
+            @endforeach
+        </div>
+    </section>
          {{-- <div class="w-100">
         @foreach ($categories as $category)
             {{$category}}

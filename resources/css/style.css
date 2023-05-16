@@ -42,22 +42,30 @@
 /* WELCOME-CARD */
 .welcome-card_link {
   display: block;
-  margin: 0 15px 30px;
+  /* margin: 0px 15px 30px; */
   border-radius: 28px;
-  padding: 10px 10px;
+  padding: 20px 10px;
   background-color: #fefefe;
   overflow: hidden;
   position: relative;
+  text-decoration: none;
+  color: #000000;
+  /* min-width: 230px; */
+  text-shadow: 2px 2px 3px white;
 }
 
-.welcome-card_title:hover  {
-  text-decoration: none;
-  color: #ffffff;
+.categoryButton button{
+  box-shadow: 10px 10px 10px rgb(202, 202, 202);
 }
-.welcome-card_link:hover .welcome-card_bg {
+
+.welcome-card_link:hover .welcome-card_bg, .welcome-card_link:hover .welcome-card_title {
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
   transform: scale(10);
+  text-decoration: none;
+  color: #ffffff;
+  transition: .6s;
+  text-shadow: 2px 2px 3px black;
 }
 .welcome-card_title {
   text-decoration: none;
@@ -66,10 +74,11 @@
   margin: 0 0 25px;
   overflow: hidden;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   color: #000000;
   z-index: 2;
   position: relative;
+  transition: 1s;
 }
 
 .welcome-card_bg {
@@ -83,7 +92,7 @@
   border-radius: 50%;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
-  transition: all .5s ease;
+  transition: all 1s ease;
 }
 .welcome-card_link:nth-child(2n) .welcome-card_bg {
   background-color: #3ecd5e;

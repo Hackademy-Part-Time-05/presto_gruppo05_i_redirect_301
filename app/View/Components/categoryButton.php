@@ -11,9 +11,11 @@ class categoryButton extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $category;
+
+    public function __construct($category)
     {
-        //
+        $this->category=$category;
     }
 
     /**
