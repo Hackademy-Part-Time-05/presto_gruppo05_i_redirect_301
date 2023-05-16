@@ -27,7 +27,7 @@
             <li class="nav-item">
               <a href="{{route('announcements.create')}}"><button class="btn ms-lg-2 ms-4 text-primary">+ Crea Annuncio</button></a>
             </li>
-            @if (Auth::user()->is_revisor)
+            @if(Auth::user()->is_revisor)
               <li class="nav-item">
                 <a class="nav-link btn text-primary btn-sm position-relative" aria-current="page" href="{{route('revisor.index')}}">
                 Zona revisore

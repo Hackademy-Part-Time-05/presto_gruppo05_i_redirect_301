@@ -26,4 +26,6 @@ class Frontcontroller extends Controller
         // dd($announcements);
         return view('announcements.index', compact( 'announcements'));
     }
+
+    
 }

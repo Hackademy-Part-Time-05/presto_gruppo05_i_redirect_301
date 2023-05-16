@@ -39,3 +39,6 @@ Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 
 Route::get('/ricerca/annuncio', [Frontcontroller::class, 'searchAnnouncement'])->name('announcement.search');
+
+//Riporta annuncio a "to be revisioned"
+Route::patch('/admin/annulla/{announcement}',[RevisorController::class,'setRevisionable'])->middleware('isRevisor')->name('revisor.set_revisionable');

@@ -38,6 +38,15 @@
             <div class="d-flex flex-column mt-4">
               <a href="{{route('announcements.details',compact('announcement'))}}" class="btn buttonRound btn-primary btn-sm" type="button" >Dettagli</a>
               <a href="{{ route('categoryShow', compact('category')) }}" class="btn btn-outline-primary btn-sm mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{$announcement->category->name}}</a>
+              @auth
+                @if(Auth::user()->is_revisor)
+                  <form action="{{route('revisor.set_revisionable', compact('announcement'))}}"   method="POST" class="">
+                    @csrf
+                    @method('PATCH')
+                    <button type="submit" class="btn buttonRound btn-danger mt-2 btn-sm w-100">Annulla</button>
+                  </form>
+                @endif
+              @endauth
             </div>
           </div>
         </div>

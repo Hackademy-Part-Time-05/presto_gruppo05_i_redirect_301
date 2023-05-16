@@ -37,4 +37,14 @@ class RevisorController extends Controller
         Artisan::call('presto:makeUserRevisor', ["email"=>$user->email]);
         return redirect('/')-> with('message', 'Complimenti! L\'utente è diventato revisore');
     }
+
+    // public function setRevisionable(Announcement $announcement) {
+    //     $announcement->is_accepted=null;
+    //     $announcement->save();
+    // }
+
+    public function setRevisionable(Announcement $announcement){
+        $announcement->setNull(null);
+        return redirect()->back()->with('message', 'Complimenti ,annuncio rifiutato');
+    }
 }

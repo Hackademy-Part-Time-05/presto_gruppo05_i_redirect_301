@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        for($i = 0; $i < 100; $i++) {
+        for($i = 0; $i < 20; $i++) {
             Announcement::create(['title' => 'Annuncio '.$i, 'category_id' => rand(1,10), 'body' => 'Testo '.$i.' Subtesto abc '.(100-$i), 'price' => $i, 'user_id' => 1]);
         }
     }
