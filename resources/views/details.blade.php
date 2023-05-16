@@ -10,7 +10,7 @@
       </header>
       <div class="container cards_landscape_wrap-2">
         <div class="row">             
-        @forelse ($category->announcements as $announcement )
+        @forelse ($announcements as $announcement )
           <x-cards :$announcement :category='$announcement->category'></x-cards>
                 @empty
                   <div class="col-12">
