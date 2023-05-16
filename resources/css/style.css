@@ -58,7 +58,7 @@
   box-shadow: 10px 10px 10px rgb(202, 202, 202);
 }
 
-.welcome-card_link:hover .welcome-card_bg, .welcome-card_link:hover .welcome-card_title {
+.welcome-card_link:hover .welcome-card_bg, .welcome-card_link:hover .welcome-card_title{
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
   transform: scale(10);
@@ -67,11 +67,13 @@
   transition: .6s;
   text-shadow: 2px 2px 3px black;
 }
+
+
 .welcome-card_title {
   text-decoration: none;
   color: #050505;
-  min-height: 87px;
-  margin: 0 0 25px;
+  min-height: 30px;
+  margin: 0 25px;
   overflow: hidden;
   font-weight: bold;
   font-size: 25px;

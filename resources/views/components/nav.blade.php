@@ -61,6 +61,7 @@
             </li>
           </ul>
           <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
+            @csrf
             <input name="searched" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-primary text-bg-primary" type="submit">Search</button>
           </form>
