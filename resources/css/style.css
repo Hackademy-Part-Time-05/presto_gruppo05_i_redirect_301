@@ -38,6 +38,103 @@
 .productCard:hover {
   transform:scale(1.1);
 }
+
+/* WELCOME-CARD */
+.welcome-card_link {
+  display: block;
+  margin: 0 15px 30px;
+  border-radius: 28px;
+  padding: 10px 10px;
+  background-color: #fefefe;
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-card_title:hover  {
+  text-decoration: none;
+  color: #ffffff;
+}
+.welcome-card_link:hover .welcome-card_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.welcome-card_title {
+  text-decoration: none;
+  color: #050505;
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  z-index: 2;
+  position: relative;
+}
+
+.welcome-card_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.welcome-card_link:nth-child(2n) .welcome-card_bg {
+  background-color: #3ecd5e;
+}
+.welcome-card_link:nth-child(3n) .welcome-card_bg {
+  background-color: #e44002;
+}
+.welcome-card_link:nth-child(4n) .welcome-card_bg {
+  background-color: #952aff;
+}
+.welcome-card_link:nth-child(5n) .welcome-card_bg {
+  background-color: #cd3e94;
+}
+.welcome-card_link:nth-child(6n) .welcome-card_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .welcome-card_link {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .welcome-card_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .welcome-card_link {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .welcome-card_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .welcome-card_link {
+    padding: 22px 40px;
+  }
+}
+
 /* Footer */
 .nav-link{
   text-decoration: none;
