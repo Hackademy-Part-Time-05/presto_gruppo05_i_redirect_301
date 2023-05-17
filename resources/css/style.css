@@ -106,7 +106,7 @@
 }
 
 .categoryButton button{
-  box-shadow: 10px 10px 10px rgb(202, 202, 202);
+  box-shadow: 10px 10px 10px rgb(190, 190, 190);
 }
 
 .welcome-card_link:hover .welcome-card_bg, .welcome-card_link:hover .welcome-card_title{
@@ -117,6 +117,24 @@
   color: #ffffff;
   transition: .6s;
   text-shadow: 2px 2px 3px black;
+}
+
+.category_card_background {
+  background-color: #ACC4D7;
+  transition: 0.3s;
+  border: #000000 2px solid;
+}
+
+.category_card_background:hover {
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+  transition: 0.3s;
+
+}
+
+.category_card_circle {
+  border: white 3px solid;
+  background-color: #2E6B9A !important;
 }
 
 
@@ -147,22 +165,11 @@
   -o-transition: all .5s ease;
   transition: all 1s ease;
 }
-.welcome-card_link:nth-child(2n) .welcome-card_bg {
-  background-color: #3ecd5e;
-}
-.welcome-card_link:nth-child(3n) .welcome-card_bg {
-  background-color: #e44002;
-}
-.welcome-card_link:nth-child(4n) .welcome-card_bg {
-  background-color: #952aff;
-}
-.welcome-card_link:nth-child(5n) .welcome-card_bg {
-  background-color: #cd3e94;
-}
-.welcome-card_link:nth-child(6n) .welcome-card_bg {
-  background-color: #4c49ea;
-}
 
+
+.categories_card_container {
+  margin-top: 120px !important;
+}
 
 
 @media only screen and (max-width: 979px) {
@@ -208,6 +215,12 @@
 .linkveloci:hover{
   transform: translateX(8px);
 }
+
+.bg-footer {
+  background-color: f4f4f4;
+}
+
+
 /*----  Card style  ----*/
 #cards_landscape_wrap-2{
   text-align: center;
@@ -296,6 +309,10 @@
   color: var(--secondary);
 }
 
+.bg-main {
+  background-color: #ACC4D7;
+}
+
 .btnHeader:link,
 .btnHeader:visited {
   text-transform: uppercase;
@@ -331,6 +348,43 @@
 
 /* ---------CARD By Elia----------- */
 
+.btn_main {
+  background-color: #ACC4D7;
+  border: #000000 solid 2px;
+  box-shadow: #cccccc 3px 3px 3px;
+  transition: 0.3s;
+}
+
+.wrapper-shadow:hover {
+  transition: 0.3s;
+  transform: translate(10px, 10px);
+  box-shadow: #c6c6c6 0px 0px 0px;
+}
+
+.wrapper-shadow {
+  box-shadow: #9b9b9b 10px 10px 10px;
+  transition: 0.3s;
+
+}
+
+.btn_categories {
+  border: #2E6B9A 2px solid !important;
+  background: white;
+}
+
+.free-shipping {
+  color: #2E6B9A;
+}
+
+.btn_main:hover {
+  background-color: #2E6B9A;
+  border: #000000 solid 2px;
+  transform: translate(3px, 3px);
+  box-shadow: #cccccc 0px 0px 3px;
+  transition: 0.3s;
+  color: white;
+}
+
 .wrapper-card {
   height: 300px;
 }
@@ -353,15 +407,12 @@
   border-radius: 15px;
 }
 
-body{background:#f4f4f4}.ratings i{font-size: 16px;color: red}.strike-text{color: red;text-decoration: line-through}.product-image{width: 100%}.dot{height: 7px;width: 7px;margin-left: 6px;margin-right: 6px;margin-top: 3px;background-color: blue;border-radius: 50%;display: inline-block}.spec-1{color: #938787;font-size: 15px}h5{font-weight: 400}.para{font-size: 16px}
+body{background:#f4f4f4}.ratings i{font-size: 16px;color: #ACC4D7}.strike-text{color: red;text-decoration: line-through}.product-image{width: 100%}.dot{height: 7px;width: 7px;margin-left: 6px;margin-right: 6px;margin-top: 3px;background-color: blue;border-radius: 50%;display: inline-block}.spec-1{color: #938787;font-size: 15px}h5{font-weight: 400}.para{font-size: 16px}
 
 
-.wrapper-shadow {
-  box-shadow: #c6c6c6 5px 5px 10px;
-}
 
 
-/* ------Carousel for Cards by Elia-------- */
+------Carousel for Cards by Elia--------
 
 .carousel-item img{
   border-radius: 15px;
@@ -412,131 +463,6 @@ body{background:#f4f4f4}.ratings i{font-size: 16px;color: red}.strike-text{color
   font-size: x-large;
   transform: translateY(20px);
   transition: .5s;
-}
-
-.Motori_background {
-  background-image: linear-gradient(var(--motori), rgb(255, 71, 71));
-}
-.Immobili_background {
-  background-image: linear-gradient(var(--immobili), rgb(212, 155, 62));
-}
-.Lavoro_background {
-  background-image: linear-gradient(var(--lavoro), rgb(219, 109, 241));
-}
-.Sport_background {
-  background-image: linear-gradient(var(--sport), rgb(209, 227, 121));
-}
-.Fotografia_background {
-  background-image: linear-gradient(var(--fotografia), rgb(255, 142, 210));
-}
-.Informatica_background {
-  background-image: linear-gradient(var(--informatica), rgb(253, 255, 135));
-}
-.Abbigliamento_background {
-  background-image: linear-gradient(var(--abbigliamento), rgb(251, 191, 255));
-}
-.Musica_background {
-  background-image: linear-gradient(var(--musica), rgb(93, 233, 163));
-}
-.Animali_background {
-  background-image: linear-gradient(var(--animali), rgb(170, 229, 255));
-}
-.Market_background {
-  background-image: linear-gradient(var(--market), rgb(250, 212, 136));
-}
-
-
-.Motori_background_card {
-  border: solid var(--motori);
-}
-.Immobili_background_card {
-  border: solid var(--immobili);
-}
-.Lavoro_background_card {
-  border: solid var(--lavoro);
-}
-.Sport_background_card {
-  border: solid var(--sport);
-}
-.Fotografia_background_card {
-  border: solid var(--fotografia);
-}
-.Informatica_background_card {
-  border: solid var(--informatica);
-}
-.Abbigliamento_background_card {
-  border: solid var(--abbigliamento);
-}
-.Musica_background_card {
-  border: solid var(--musica);
-}
-.Animali_background_card {
-  border: solid var(--animali);
-}
-.Market_background_card {
-  border: solid var(--market);
-}
-
-.Motori_background_card:hover {
-  border: solid var(--motori);
-}
-.Immobili_background_card:hover {
-  border: solid var(--immobili);
-}
-.Lavoro_background_card:hover {
-  border: solid var(--lavoro);
-}
-.Sport_background_card:hover {
-  border: solid var(--sport);
-}
-.Fotografia_background_card:hover {
-  border: solid var(--fotografia);
-}
-.Informatica_background_card:hover {
-  border: solid var(--informatica);
-}
-.Abbigliamento_background_card:hover {
-  border: solid var(--abbigliamento);
-}
-.Musica_background_card:hover {
-  border: solid var(--musica);
-}
-.Animali_background_card:hover {
-  border: solid var(--animali);
-}
-.Market_background_card:hover {
-  border: solid var(--market);
-}
-
-.Motori_background_card:hover {
-  background-color: var(--motori);
-}
-.Immobili_background_card:hover {
-  background-color: var(--immobili);
-}
-.Lavoro_background_card:hover {
-  background-color: var(--lavoro);
-}
-.Sport_background_card:hover {
-  background-color: var(--sport);
-}
-.Fotografia_background_card:hover {
-  background-color: var(--fotografia);
-}
-.Informatica_background_card:hover {
-  background-color: var(--informatica);
-}
-.Abbigliamento_background_card:hover {
-  background-color: var(--abbigliamento);
-}
-.Musica_background_card:hover {
-  background-color: var(--musica);
-}
-.Animali_background_card:hover {
-  background-color: var(--animali);
-}
-.Market_background_card:hover {
-  background-color: var(--market);
 }
 
 .btn-outline-primary:hover {
@@ -613,4 +539,89 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
   .carousel-container #carousel-thumbs {
     background: #ccccce;
   }
+}
+
+
+/* -------------CUSTOM DIVIDER 1------------- */
+.custom-shape-divider-top-1684349093 {
+  position: absolute;
+  bottom: -215px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 150px;
+}
+
+.custom-shape-divider-top-1684349093 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 167px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1684349093 .shape-fill {
+  fill: #ACC4D7;
+}
+
+
+
+
+/* -------------CUSTOM DIVIDER 2------------- */
+
+.custom-shape-divider-bottom-1684350379 {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684350379 svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 203px;
+}
+
+.custom-shape-divider-bottom-1684350379 .shape-fill {
+    fill: #ACC4D7;
+}
+
+
+
+/* -------------CUSTOM DIVIDER 3------------- */
+
+
+.custom-shape-divider-top-1684351062 {
+  position: absolute;
+  bottom: -228px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1684351062 svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 229px;
+}
+
+.custom-shape-divider-top-1684351062 .shape-fill {
+  fill: #ACC4D7;
+}
+
+
+
+/* -----------latest_announcements_section------------ */
+
+.latest_announcements_section {
+  background-color: #ACC4D7;
+  margin-top: 250px;
+  margin-bottom: 250px;
 }
