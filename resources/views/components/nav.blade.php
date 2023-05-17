@@ -22,7 +22,8 @@
             <li class="nav-item">
               <a class="nav-link " href="/login">Accedi</a>
             </li>
-            @else            @if(Auth::user()->is_revisor)
+            @else           
+             @if(Auth::user()->is_revisor)
             <li class="nav-item">
               <a class="nav-link  position-relative" aria-current="page" href="{{route('revisor.index')}}">
               Zona revisore

@@ -24,20 +24,20 @@
             <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> lorem</a>
           </p>
           <p class="linkveloci">
-            <a href="{{route('become.revisor')}}" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Diventa revisore</a>
+            <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> lorem</a>
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold ">Link utili</h6>
           <hr>
           <p class="linkveloci">
-            <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Il tuo account</a>
+            <a href="/login" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Il tuo account</a>
           </p>
           <p class="linkveloci">
-            <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Diventa un Affiliato!</a>
+            <a href="{{route('become.revisor')}}" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Diventa un Affiliato!</a>
           </p>
           <p class="linkveloci">
-            <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Spese di Spedizione</a>
+            <a href="/register" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Registrati!</a>
           </p>
           <p class="linkveloci">
             <a href="#!" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Help</a>
