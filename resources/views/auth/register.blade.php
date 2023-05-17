@@ -1,11 +1,13 @@
 <x-main>
-  <header class="header">
-    <div class="text-header">
-      <h1 class="heading-primary">
-        <span class="heading-primary-main">Benvenuto su presto.it!</span>
-      </h1>
+  <div class="container-fluid hero-header bg-grey py-5 mb-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-12">
+                <h1 class="display-4 mb-3 text-center">Registrati su Presto.it!</h1>
+            </div>
+        </div>
     </div>
-  </header>
+  </div>
     <section class=" mt-5">
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -14,7 +16,7 @@
                 <div class="card-body p-md-5">
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registrati su Presto.it </p>
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crea il tuo account! </p>
                       <form class="mx-1 mx-md-4" action="{{ route("register") }}" method="POST">
                         @csrf
                         <div class="d-flex flex-row align-items-center mb-4">

@@ -15,11 +15,62 @@
 }
 /* navbar */
 .navbar{
-  transition: all 0.5s;
+  transition: .5s;
 }
 .navbar-scrolled{
-  background-color: #000000;
+  background-color: #fafafa;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 30px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: blue;
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link  {
+      margin-right: 0;
+      padding: 10px 0;
+  }
+
+  .navbar .navbar-nav {
+      border-top: 1px solid #EEEEEE;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+      display: block;
+      border: none;
+      margin-top: 0;
+      top: 150%;
+      opacity: 0;
+      visibility: hidden;
+      transition: .5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+      top: 100%;
+      visibility: visible;
+      transition: .5s;
+      opacity: 1;
+  }
 }
 
 /* Card */
@@ -241,57 +292,8 @@
 }
 
 /* header */
-.header {
-  height: 100vh;
-  background-image: 
-  linear-gradient(to right bottom, 
-   rgba(196, 214, 219, 0.8),
-   rgba(30, 108, 217, 0.8)),
-   url('https://cdn.pixabay.com/photo/2019/03/20/12/38/business-4068346_960_720.png');
-  
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.brand-box {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.brand { font-size: 20px; }
-
-.text-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  
-  backface-visibility: hidden;
-  margin-bottom: 30px;
-}
-
-.heading-primary-main {
-  display: block;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-.heading-primary-sub {
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 7.4px;
+.hero-header  {
+  color: var(--secondary);
 }
 
 .btnHeader:link,

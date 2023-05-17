@@ -1,11 +1,12 @@
-<div>
-  <header class="header">
-  <div class="text-header">
-    <h1 class="heading-primary">
-      <span class="heading-primary-main">Benvenuto su presto.it!</span>
-    </h1>
+<div class="container-fluid hero-header bg-grey py-5 mb-5">
+  <div class="container py-5">
+      <div class="row g-5 align-items-center">
+          <div class="col-12">
+              <h1 class="display-4 mb-3 text-center">Benvenuto su presto.it!</h1>
+          </div>
+      </div>
   </div>
-  </header>
+</div>
   <section class=" mt-5">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">

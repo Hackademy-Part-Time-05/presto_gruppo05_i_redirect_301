@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top ">
-    <div class="container">
-      <a class="navbar-brand text-primary" href="/">Presto.it</a>
+  <a href="/" class="navbar-brand d-flex me-2"><h2>Presto.it</h2></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
@@ -8,52 +7,51 @@
         <ul class="navbar-nav ms-auto">
             @guest
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorie
               </a>    
               <ul class="dropdown-menu ">
                 @foreach ($categories as $category)
-                <li><a class="dropdown-item text-primary" href="{{ route('categoryShow', compact('category')) }}">{{$category->name}}</a></li>
+                <li><a class="dropdown-item " href="{{ route('categoryShow', compact('category')) }}">{{$category->name}}</a></li>
                 @endforeach
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="/register">Registrati</a>
+              <a class="nav-link " href="/register">Registrati</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="/login">Accedi</a>
+              <a class="nav-link " href="/login">Accedi</a>
             </li>
-            @else
+            @else            @if(Auth::user()->is_revisor)
             <li class="nav-item">
-              <a href="{{route('announcements.create')}}"><button class="btn ms-lg-2 ms-4 text-primary">+ Crea Annuncio</button></a>
+              <a class="nav-link  position-relative" aria-current="page" href="{{route('revisor.index')}}">
+              Zona revisore
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}
+            </a>
             </li>
-            @if(Auth::user()->is_revisor)
-              <li class="nav-item">
-                <a class="nav-link btn text-primary btn-sm position-relative" aria-current="page" href="{{route('revisor.index')}}">
-                Zona revisore
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}
-              </a>
-              </li>
-            @endif
+          @endif
+            <li class="nav-item">
+              <a href="{{route('announcements.create')}}" class="nav-item nav-link">+ Crea Annuncio</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorie
               </a>    
               <ul class="dropdown-menu">
                 @foreach ($categories as $category)
-                <li><a class="dropdown-item text-primary" href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a></li>
+                <li><a class="dropdown-item " href="{{route('categoryShow', compact('category'))}}">{{$category->name}}</a></li>
                 @endforeach
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ auth()->user()->name }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="btn btn-sm ms-2 text-primary">Esci</button>
+                        <button type="submit" class="dropdown-item  ">Esci</button>
                     </form>
                 </li>
                 @endguest
@@ -62,9 +60,8 @@
           </ul>
           <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
             @csrf
-            <input name="searched" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary text-bg-primary" type="submit">Search</button>
+            <input name="searched" class="form-control me-2" type="search" placeholder="Cerca categoria" aria-label="Search">
+            <button class="btn btnHeader btn-dark btn-animated" type="submit">Cerca</button>
           </form>
       </div>
-    </div>
   </nav>
