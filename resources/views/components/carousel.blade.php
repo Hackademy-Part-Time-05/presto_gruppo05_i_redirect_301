@@ -1,7 +1,7 @@
-<div id='prova' class="container mt-5 col-xs-12 col-md-6">
+<div id='prova' class=" container mt-5 col-xs-12 col-md-6">
     <div class="carousel-container position-relative row">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div id="myCarousel" class=" carousel slide px-0" data-ride="carousel">
+            <div class="carousel-inner rounded-4">
                 <div class="carousel-item active" data-slide-number="0">
                     <img src="https://picsum.photos/2000/1500" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
                 </div>
@@ -36,7 +36,7 @@
         </div>
         
         <!-- Carousel Navigation -->
-        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+        <div id="carousel-thumbs" class="carousel slide rounded-4 w-100" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row mx-0">

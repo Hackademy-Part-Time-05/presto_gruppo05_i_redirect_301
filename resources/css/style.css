@@ -485,6 +485,12 @@ body{background:#f4f4f4}.ratings i{font-size: 16px;color: #ACC4D7}.strike-text{c
 
 
 
+/* ---------------Category page details------------------- */
+
+.category-icon {
+  font-size: 200px;
+  color: #2E6B9A;
+}
 
 
 
@@ -540,6 +546,49 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
     background: #ccccce;
   }
 }
+
+#myCarousel div{
+  box-shadow: #757575 10px 10px 10px;
+}
+
+/* ---------------Category page details------------------- */
+
+.category-icon {
+  font-size: 200px;
+  color: #2E6B9A;
+}
+
+
+/* ----------------ANNOUNCEMENT DETAILS--------------- */
+
+.btn-category-details {
+  background-color: #f4f4f4;
+  border: solid 2px #2E6B9A;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: #919191 5px 5px 5px;
+}
+
+.btn-category-details:hover {
+  background-color: #2E6B9A;
+  border: solid 2px #f4f4f4;
+  color: #f4f4f4;
+  transform: translate(5px, 5px);
+  transition: 0.3s;
+  box-shadow: #919191 0px 0px 5px;
+
+}
+
+.announcement-detail {
+
+}
+
+.title-announcement-detail {
+  text-shadow: #f4f4f4 3px 3px 3px;
+}
+
+
+
 
 
 /* -------------CUSTOM DIVIDER 1------------- */
