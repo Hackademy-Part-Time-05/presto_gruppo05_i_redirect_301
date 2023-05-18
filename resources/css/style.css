@@ -580,14 +580,19 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
 }
 
 .announcement-detail {
-
+  margin-top: 90px;
 }
 
 .title-announcement-detail {
   text-shadow: #f4f4f4 3px 3px 3px;
 }
 
-
+.announcement-detail-user-info {
+  background-color: #f4f4f4;
+  height: 200px;
+  box-shadow: #757575 10px 10px 10px;
+  border: solid 2px #2E6B9A;
+}
 
 
 
