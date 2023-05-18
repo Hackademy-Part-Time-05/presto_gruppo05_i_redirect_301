@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top ">
-  <a href="/" class="navbar-brand d-flex me-2"><h2>Presto.it</h2></a>
+  <a href="/" class="navbar-brand d-flex ms-2"><h2>Presto.it</h2></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
@@ -52,17 +52,19 @@
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="dropdown-item  ">Esci</button>
+                        <button type="submit" class="dropdown-item">Esci</button>
                     </form>
                 </li>
                 @endguest
               </ul>
             </li>
           </ul>
-          <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
-            @csrf
-            <input name="searched" class="form-control me-2" type="search" placeholder="Cerca categoria" aria-label="Search">
-            <button class="btn btnHeader btn-dark btn-animated" type="submit">Cerca</button>
-          </form>
+          <div  class="search-box m-3">
+            <form action="{{route('announcement.search')}}" method="GET" class="d-flex ">
+              @csrf
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+              <input name="searched" class="input-search" type="search" placeholder="Cerca categoria" aria-label="Search">
+            </form>
+          </div>
       </div>
   </nav>
