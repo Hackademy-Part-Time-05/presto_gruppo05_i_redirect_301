@@ -625,3 +625,95 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
   margin-top: 250px;
   margin-bottom: 250px;
 }
+/*----------- ANIMAZIONE ICONE FOOTER by Andrea ------------------*/
+
+.trin-trin:hover
+{
+    animation-name: trin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes trin {
+
+  from {
+      transform:rotate3d(0, 0, 1, 0deg);
+  }
+  20%, 32%, 44%, 56%, 68% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%, 35%, 47%, 59%, 71% {
+      transform: rotate3d(0,0,1,15deg);
+  }
+  26%, 38%, 50%, 62%, 74% {
+      transform: rotate3d(0,0,1,0deg);
+  }
+  29%, 41%, 53%, 65%, 77% {
+      transform: rotate3d(0,0,1,-15deg);
+  }
+  80% {
+      transform:rotate3d(0, 0, 1, 0deg);
+  }
+
+}
+
+/*-----------  FINE ANIMAZIONE ICONE FOOTER by Andrea ------------------*/
+
+/*----------- Cerca nella NAVBAR by Andrea------------------*/
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #2E6B9A;
+  padding-right: 40px;
+  color:var(--primario-presto);
+}
+.input-search::placeholder{
+  color:var(--primario-presto);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ACC4D7 ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:hover ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid var(--primario-presto);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:hover{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid var(--primario-presto);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/*----------- FINE Cerca nella NAVBAR by Andrea------------------*/
