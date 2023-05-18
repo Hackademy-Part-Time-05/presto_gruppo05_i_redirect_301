@@ -1,0 +1,32 @@
+@media (max-width: 991.98px) { 
+    .navbar {
+        background-color: rgb(255, 255, 255);
+        position:fixed;
+    }
+    .navbar .nav-item {
+        padding: 15px 0;
+    }
+    .navbar.thin .nav-item {
+        padding: 0 0;
+    }
+    .navbar-nav .nav-link::before {
+        height: 0;
+    }
+    .info_presto{
+        transform: translate(0,0);
+        left:0;
+        position: relative;
+    }
+    .input-search{
+        height: 50px;
+        width: 100%;
+        border-style: none;
+        padding: 10px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        padding-right: 40px;
+        color:var(--primario-presto);
+      }
+ }
