@@ -15,8 +15,8 @@
     <section class="pt-4 mt-5 container categories_card_container">
         <div class=" mt-5 row justify-content-center pb-5">
             @foreach ($categories as $category)
-                <x-category-button :$category>
-                </x-category-button>
+            <x-category-button :$category>
+            </x-category-button>
             @endforeach
         </div>
     </section>
@@ -28,9 +28,9 @@
         </div>
         <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
             <div class="row align-content-start justify-content-center g-4">
-                    @foreach ($announcements as $announcement)
-                        <x-cards :$announcement :category='$announcement->category'></x-cards>
-                    @endforeach
+                @foreach ($announcements as $announcement)
+                <x-cards :$announcement :category='$announcement->category'></x-cards>
+                @endforeach
             </div>
         </div>
         <div class="custom-shape-divider-top-1684351062">
@@ -39,5 +39,5 @@
             </svg>
         </div>
     </section>
-
+    
 </x-main>
