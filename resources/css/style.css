@@ -872,3 +872,19 @@ html {
 
 /* ------------------FINE CURSORE------------------- */
 
+
+
+
+
+/* ---------------UTILITY--------------- */
+
+.emulateclick_on_hover:hover {
+  translate: 10px 10px;
+  transition: .3s;
+  box-shadow: #757575 0px 0px 10px;
+}
+
+.emulateclick_on_hover {
+  transition: .3s;
+  box-shadow: #757575 10px 10px 10px;
+}

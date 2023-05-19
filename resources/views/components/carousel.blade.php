@@ -1,7 +1,7 @@
-<div id='prova' class=" container my-2 py-0 col-xs-12 col-md-6">
+<div id='prova' class=" container emulateclick_on_hover my-2 py-0 col-xs-12 col-md-6">
     <div class="carousel-container position-relative row">
-        <div id="myCarousel" class=" carousel slide px-0" data-ride="carousel">
-            <div class="carousel-inner rounded-4">
+        <div id="myCarousel" class=" carousel slide px-0 " data-ride="carousel">
+            <div class="carousel-inner rounded-4 ">
                 <div class="carousel-item active" data-slide-number="0">
                     <img src="https://picsum.photos/1000/701" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
                 </div>

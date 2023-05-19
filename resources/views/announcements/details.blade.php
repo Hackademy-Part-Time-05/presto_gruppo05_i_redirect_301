@@ -23,7 +23,7 @@
     <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
       <div class="row align-items-start d-flex justify-content-center g-5">       
         <x-carousel></x-carousel>
-        <div class="col-lg-5 pt-4 col-md-5 col-sm-12 announcement-detail h-100 my-2">
+        <div class="col-lg-5 pt-4 col-md-5 col-sm-12 emulateclick_on_hover m-bottom-3 announcement-detail h-100 my-2">
           <h5>
             {{-- <a href="{{route('categoryShow',['category'=>$announcement->category])}}"><button class="btn btnHeader btn-category-details btn-animated w-75 m-1"> Esplora la categoria: {{$announcement->category->name}}
             </button></a> --}}
