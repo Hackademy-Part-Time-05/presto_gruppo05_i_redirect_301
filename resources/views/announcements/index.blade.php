@@ -14,11 +14,7 @@
                     <p class="h1 mt-5">Non sono presenti annunci per la tua ricerca</p>
                 </div>
                 @endforelse
-                <div class="prova">
-                    testmattia
-                </div>
-                {{ $announcements->links() }}
-            </div>
+                {{$announcements->links()}}
         </div>
         <div class="custom-shape-divider-top-1684351062">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

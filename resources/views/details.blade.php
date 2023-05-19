@@ -30,6 +30,7 @@
                   <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btnHeader btn-dark btn-animated">Nuovo Annuncio</a></p>
                 </div>
               @endforelse
+            {{$announcements->links()}}
         </div>
     </div>
     <div class="custom-shape-divider-top-1684351062">
