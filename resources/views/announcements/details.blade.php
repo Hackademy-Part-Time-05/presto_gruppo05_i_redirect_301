@@ -4,13 +4,12 @@
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
           <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb mb-0">
+            <ol class="mt-5 breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">{{$announcement->category->name}}</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{$announcement->title}}</li>
             </ol>
           </nav>
-          <h1 class="display-4 mb-3 animated slideInDown">Scopri {{$announcement->title}}</h1>
         </div>
       </div>
     </div>
@@ -22,36 +21,68 @@
       </svg>
     </div>
     <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
-      <div class="row align-content-start justify-content-center g-5">       
+      <div class="row align-items-start d-flex justify-content-center g-5">       
         <x-carousel></x-carousel>
-        <div class="col-lg-5 pt-4 col-md-6 col-sm-6 announcement-detail">
+        <div class="col-lg-5 pt-4 col-md-5 col-sm-12 announcement-detail h-100 my-2">
           <h5>
             {{-- <a href="{{route('categoryShow',['category'=>$announcement->category])}}"><button class="btn btnHeader btn-category-details btn-animated w-75 m-1"> Esplora la categoria: {{$announcement->category->name}}
             </button></a> --}}
           </h5>
-          <h2 class="col-lg-7 fw-bold col-md-7 col-sm-6 title-announcement-detail">{{$announcement->title}}</h2>
-          <div class="col-lg-7 col-md-7 col-sm-6">
+          <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement->title}}</h2>
+          <div class="col-lg-7 col-md-7 col-sm-6 p-3">
             <p>Pubblicato il: <em>{{$announcement->created_at->format('d/m/Y')}}</em></p>Inserito da: <b>{{$announcement->user->name ?? ''}}</b> 
           </p>
-          <h2> {{$announcement->price}} €</H2>
+          <h2 class="announcement_detail_price"> {{$announcement->price}} €</H2>
           </div>
-          <div>
-            <hr>
-            <p>
+          <div class="h-100 ">
+            {{-- <hr> --}}
+            <p class="announcement_detail_body p-3 h-100">
               {{$announcement->body}}
             </p>
           </div>
         </div>
-        <div class="container w-100">
-          <div class="rounded-4 announcement-detail-user-info w-50 row ">
-            <div class="col-3">
-              <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt="" class=" w-100">
+
+        {{-- -----------------PROFILO INSERZIONISTA NELL'ANNUNCIO------------------ --}}
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col col-12 col-md-9 col-lg-9 col-xl-7">
+                <div class="card announcement_detail_user" style="border-radius: 15px;">
+                  <div class="card-body p-4">
+                    <div class="d-flex text-black">
+                      <div class="flex-shrink-0">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+                          alt="Generic placeholder image" class="img-fluid"
+                          style="width: 180px; border-radius: 10px;">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="mb-1"> <b>{{$announcement->user->name}}</b></h5>
+                        <p class="mb-2 pb-1" style="color: #424242;">{{$announcement->user->email}}</p>
+                        <div class="d-flex justify-content-between rounded-3 p-2 mb-2"
+                          style="background-color: #e6e6e6;">
+                          <div>
+                            <p class="small text-muted mb-1">Inserzioni</p>
+                            <p class="mb-0">{{$announcement->user->announcements->count()}}</p>
+                          </div>
+                          <div class="px-3">
+                            <p class="small text-muted mb-1">Iscritto dal</p>
+                            <p class="mb-0">{{$announcement->user->created_at->format('d/m/Y')}}</p>
+                          </div>
+                          <div>
+                            <p class="small text-muted mb-1">Ultima Attività</p>
+                            <p class="mb-0">{{$latestannouncementbyuser[0]->created_at}}</p>
+                          </div>
+                        </div>
+                        <div class="d-flex pt-1">
+                          <button type="button" class="btn btn_main btn-outline-primary me-1 flex-grow-1">Contatta</button>
+                          {{-- <button type="button" class="btn btn-primary flex-grow-1">Follow</button> --}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 class="col-3">{{$announcement->user->name}}</h3>
-            <p class="col-3">Iscritto dal: {{$announcement->user->created_at->format('d/m/Y')}}</p>
-            <p>L'utente ha inserito  <b>{{$announcement->user->announcements->count()}}</b> Annunci</p>
           </div>
-        </div>
       </div>
     </div>
     <div class="custom-shape-divider-top-1684351062">

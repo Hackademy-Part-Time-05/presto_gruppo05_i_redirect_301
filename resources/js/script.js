@@ -72,3 +72,27 @@ $('#myCarousel').carousel({
     var src = $(e.target).attr('data-remote');
     if (src) $(this).ekkoLightbox();
   });
+
+
+/* ------------------CURSORE------------------- */
+
+$(window).mousemove(function(e) { 
+  
+  $('.cursor').css({
+    left: e.pageX,
+     top: e.pageY
+  })
+  
+})
+
+$('h1, h2, h3, h4, h5, h6, img, button, a')
+.on('mouseenter', function() {
+  $('.cursor').addClass('focus')
+})
+.on('mouseleave', function() {  
+  $('.cursor').removeClass('focus')
+})
+
+/* ------------------FINE CURSORE------------------- */
+
+

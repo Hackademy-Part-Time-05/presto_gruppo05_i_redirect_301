@@ -581,6 +581,11 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
 
 .announcement-detail {
   margin-top: 90px;
+  background-color: #f4f4f4;
+  border: solid 2px #2E6B9A;
+  border-radius: 25px;
+  box-shadow: #757575 10px 10px 10px;
+
 }
 
 .title-announcement-detail {
@@ -593,6 +598,55 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
   box-shadow: #757575 10px 10px 10px;
   border: solid 2px #2E6B9A;
 }
+
+.announcement_detail_price {
+  color: #2E6B9A;
+}
+
+.announcement_detail_body {
+  background-color: #dedede;
+  border: solid 1px #757575;
+  border-radius: 25px;
+  box-shadow: #757575 5px 5px 5px;
+  height: auto;
+}
+
+.announcement_detail_user {
+  box-shadow: #757575 10px 10px 10px;
+  transition: 0.3s;
+  background-color: #f4f4f4;
+}
+
+.announcement_detail_user img{
+  box-shadow: #757575 5px 5px 5px;
+  transition: 0.3s;
+}
+
+.announcement_detail_user:hover {
+  box-shadow: #757575 0px 0px 10px;
+  transition: .3s;
+  transform: translate(10px, 10px);
+}
+
+.announcement_detail_user:hover img {
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+
+.revisor_buttons button{
+  border: solid 1px black;
+  box-shadow: #757575 5px 5px 5px;
+  transition: .3s;
+}
+
+.revisor_buttons button:hover {
+  /* border: solid 2px black; */
+  box-shadow: #757575 0px 0px 5px;
+  translate: 5px 5px;
+  transition: .3s;
+}
+
 
 
 
@@ -771,3 +825,50 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
 }
 
 /*----------- FINE Cerca nella NAVBAR by Andrea------------------*/
+
+
+
+
+/* ------------------CURSORE------------------- */
+
+:root { --size: 30px; }
+html {
+  cursor: none;
+  user-select: none;
+}
+
+.cursor {
+  height: var(--size);
+  width:  var(--size);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: 2px solid white
+}
+
+.cursor.cursor-follower {
+  background: rgba(0, 80, 149, 0.484);
+  transition: top .15s, left .15s,
+              width .5s, height .5s;
+  transition-timing-function: ease-out;
+  z-index: 999;
+}
+
+.cursor.cursor-dot {
+  background: #3e3e3e;
+  transition: width .25s, height .25s;
+  z-index: 999;
+}
+
+.cursor-follower.focus {
+  --size: 100px;
+}
+
+.cursor-dot.focus {
+  --size: 0;
+}
+
+/* ------------------FINE CURSORE------------------- */
+

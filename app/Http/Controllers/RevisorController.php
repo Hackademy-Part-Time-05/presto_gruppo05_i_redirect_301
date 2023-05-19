@@ -14,7 +14,12 @@ class RevisorController extends Controller
 {
     public function index(){
         $announcement_to_check = Announcement::where('is_accepted',null)->first();
-        return view('revisor.index', compact('announcement_to_check'));
+        if($announcement_to_check != null) {
+            $latestannouncementbyuser = Announcement::where('user_id', $announcement_to_check->user->id)->orderBy('created_at', 'desc')->take(1)->get();
+        } else {
+            $latestannouncementbyuser = false;
+        }
+        return view('revisor.index', compact('announcement_to_check', 'latestannouncementbyuser'));
     }
 
     public function acceptAnnouncement(Announcement $announcement){

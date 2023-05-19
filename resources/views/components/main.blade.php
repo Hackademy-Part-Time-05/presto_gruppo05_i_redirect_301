@@ -16,6 +16,8 @@
   </head>
   <body>
     <x-nav/>
+    <x-cursor/> 
+    <x-cursor2></x-cursor2>   
     {{$slot}}
     
     <x-footer/>
