@@ -20,15 +20,15 @@
   
     <div class="col-md-8 g-3 card_product">
       <div class="row p-2 bg-white border rounded-5 wrapper-shadow">
-        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image rounded-4" src="https://picsum.photos/200/{{200+$announcement->id}}"></div>
-        <div class="col-md-6 mt-1">
+        <div class="col-md-3 "><img class="img-fluid img-responsive rounded product-image rounded-4" src="https://picsum.photos/200/{{200+$announcement->id}}"></div>
+        <div class="col-md-6 mt-4">
           <h5>{{$announcement->title}}</h5>
           <div class="d-flex flex-row">
             <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
           </div>
           <div class="mt-1 mb-1 spec-1"><span>Inserito da <em>{{$announcement->user->name}}</em> </span></div>
           <div class="mt-1 mb-1 spec-1"><span>in data {{$announcement->created_at->format('d/m/Y')}}</span></div>
-          <p class="text-justify text-truncate para mb-0">{{$announcement->body}}<br><br></p>
+          <p class="text-justify text-truncate para pt-1 mb-0">{{$announcement->body}}<br><br></p>
         </div>
         <div class="align-items-center align-content-center col-md-3 border-left mt-1">
           <div class="d-flex flex-row align-items-center">

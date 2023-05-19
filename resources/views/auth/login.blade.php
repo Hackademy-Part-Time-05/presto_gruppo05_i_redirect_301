@@ -33,8 +33,8 @@
                             @enderror
                           </div>
                         </div>
-                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="submit" class="btn btnHeader btn-dark btn-animated">Accedi</button>
+                        <div class="d-flex justify-content-end">
+                          <button type="submit" class="btn buttonRound btn_main">Accedi</button>
                         </div>
                       </form>
                     </div>

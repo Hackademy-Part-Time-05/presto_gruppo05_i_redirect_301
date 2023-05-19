@@ -30,7 +30,6 @@
           <p class="linkveloci"><i class="fas fa-home mr-3"></i> Italia</p>
           <p class="linkveloci"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
           <p class="linkveloci"><i class="fa-solid fa-phone trin-trin"></i> 32491043913</p>
-          <p class="linkveloci"><i class="fa-solid fa-phone trin-trin"></i> 32452312323</p>
         </div>
       </div>
     </div>

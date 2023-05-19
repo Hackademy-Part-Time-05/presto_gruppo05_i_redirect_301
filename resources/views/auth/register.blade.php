@@ -49,8 +49,8 @@
                               <label class="form-label" for="password">Conferma Password</label>
                             </div>
                           </div>
-                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="submit" class="btn btnHeader btn-dark btn-animated">Registrati ora!</button>
+                        <div class="d-flex justify-content-end">
+                          <button type="submit" class="btn buttonRound btn_main">Registrati ora!</button>
                         </div>
                       </form>
                     </div>
