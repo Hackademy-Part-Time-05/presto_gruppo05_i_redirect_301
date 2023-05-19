@@ -1,4 +1,4 @@
-<div id='prova' class=" container emulateclick_on_hover my-2 py-0 col-xs-12 col-md-6">
+<div id='prova' class=" container emulateclick_on_hover my-2 py-0 col-xs-12 col-md-12 col-lg-6">
     <div class="carousel-container position-relative row">
         <div id="myCarousel" class=" carousel slide px-0 " data-ride="carousel">
             <div class="carousel-inner rounded-4 ">
