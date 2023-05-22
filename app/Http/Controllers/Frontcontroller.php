@@ -27,11 +27,10 @@ class Frontcontroller extends Controller
         return view('announcements.index', compact( 'announcements'));
     }
 
-    // public function setLanguage($lang)
-    // {
-    //     dd($lang)
-    //     session()->put('locale' ,$lang);
-    //     return redirect()->back();
-    // }
+ public function setLanguage($lang)
+ {
+    session()->put('locale' ,$lang);
+    return redirect()->back();
+  }
     
 }

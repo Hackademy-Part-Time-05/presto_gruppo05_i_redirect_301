@@ -66,7 +66,7 @@
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                       <div class="form-outline flex-fill mb-0">
-                          <input wire:model="temporary_images" type="file" name="images" class="form-control @error('temporary_images.*') is-invalid @enderror"
+                          <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror"
                           placeholder="Img"/>
                           @error('temporary_images.*')
                           <div class=" text-danger">
