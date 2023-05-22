@@ -64,6 +64,31 @@
                             @enderror
                           </div>
                     </div>
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <div class="form-outline flex-fill mb-0">
+                          <input wire:model="temporary_images" type="file" name="images" class="form-control @error('temporary_images.*') is-invalid @enderror"
+                          placeholder="Img"/>
+                          @error('temporary_images.*')
+                          <div class=" text-danger">
+                            {{$message}}
+                          </div> 
+                          @enderror
+                        </div>
+                    </div>
+                    @if (!empty($images))
+                    <div class="row">
+                      <div class="col-12"><p>Photo preview:</p>
+                        <div class="row border border-4 border-info rounded shadow py-4">
+                          @foreach ($images as $key =>$image )
+                          <div class="col my-3">
+                            <div class="img-preview mx-auto shadow rounded" style="background-img:url({{$image->temporaryUrl()}})"></div>
+                            <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>Cancella</button>
+                          </div>
+                          @endforeach
+                        </div>
+                      </div>
+                    </div>
+                    @endif
                     <div class="d-flex justify-content-end">
                       <button type="submit" class="btn buttonRound btn_main">Conferma il tuo annuncio!</button>
                     </div>

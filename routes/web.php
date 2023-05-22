@@ -42,3 +42,6 @@ Route::get('/ricerca/annuncio', [Frontcontroller::class, 'searchAnnouncement'])-
 
 //Riporta annuncio a "to be revisioned"
 Route::patch('/admin/annulla/{announcement}',[RevisorController::class,'setRevisionable'])->middleware('isRevisor')->name('revisor.set_revisionable');
+
+// Cambio di lingua
+Route::post('/lingua/{lang}', [Frontcontroller::class , 'setLanguage'])->name('set_language_locale');

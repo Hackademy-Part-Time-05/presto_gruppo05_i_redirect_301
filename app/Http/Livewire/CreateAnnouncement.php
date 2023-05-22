@@ -8,20 +8,27 @@ use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use App\Models\User;
+use Livewire\WithFileUploads;
 
 class CreateAnnouncement extends Component
 {
+    use WithFileUploads;
+
+
     public $title;
     public $body;
     public $price;
     public $category;
-
+    public $temporany_images;
+    public $images=[];
 
     protected $rules = [
         'title' => 'required|min:4',
         'body' => 'required',
         'price' => 'required|numeric',
         'category' => 'required',
+        'images.*' => 'image|max:1024',
+        'temporary_images.*' => 'image|max:1024',
     ];
 
     protected $messages = [
@@ -29,6 +36,12 @@ class CreateAnnouncement extends Component
         'min' => ':attribute troppo corto',
         'max' => ':attribute troppo lungo',
         'numeric' => 'Il prezzo deve essere un numero',
+        'temporary_images.required' => 'Immagine richiesta',
+        'temporary_images.*.image' => 'i file devono essere immagini',
+        'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 1 mb',
+        'images.image' => 'L\'immagine dev\'essere un\'immagine',
+        'images.max' => 'L\'immagine dev\'essere massimo di 1mb',
+        
     ];
 
     public function store()
