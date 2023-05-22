@@ -888,3 +888,14 @@ html {
   transition: .3s;
   box-shadow: #757575 10px 10px 10px;
 }
+
+
+
+/* -----------------IMAGE PREVIEW---------------- */
+
+.img-preview {
+  width: 100px;
+  height: 70px;
+  background-size:contain;
+  background-repeat: no-repeat;
+}

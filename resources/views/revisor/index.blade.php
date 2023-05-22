@@ -28,7 +28,12 @@
         </h5>
         <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement_to_check->title}}</h2>
         <div class="col-lg-7 col-md-7 col-sm-6 p-3">
+<<<<<<< HEAD
           <p>{{__('ui.on')}}: <em>{{$announcement_to_check->created_at->format('d/m/Y')}}</em></p>{{__('ui.posted_by')}}: <b>{{$announcement_to_check->user->name ?? ''}}</b> 
+=======
+          <p>Pubblicato il: <em>{{$announcement_to_check->created_at->format('d/m/Y')}}</em>
+          </p>Inserito da: <b>{{$announcement_to_check->user->name ?? ''}}</b> 
+>>>>>>> 5b1a69ebc4e218c25fa47857c66c51828e08ca0f
         </p>
         <h2 class="announcement_detail_price"> {{$announcement_to_check->price}} €</H2>
         </div>
