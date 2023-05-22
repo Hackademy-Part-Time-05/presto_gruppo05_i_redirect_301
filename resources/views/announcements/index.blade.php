@@ -11,7 +11,7 @@
                 <x-cards :$announcement :category='$announcement->category'></x-cards>
                 @empty
                 <div class="col-12">
-                    <p class="h1 mt-5">Non sono presenti annunci per la tua ricerca</p>
+                    <p class="h1 mt-5">{{__('ui.No_Announcements')}}</p>
                 </div>
                 @endforelse
                 {{$announcements->appends(Request::except('page'))->links()}}

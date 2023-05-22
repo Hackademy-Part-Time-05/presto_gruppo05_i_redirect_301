@@ -25,12 +25,10 @@
         <x-carousel></x-carousel>
         <div class="col-lg-5 pt-4 col-md-12 col-sm-12 emulateclick_on_hover m-bottom-3 announcement-detail h-100 my-2">
           <h5>
-            {{-- <a href="{{route('categoryShow',['category'=>$announcement->category])}}"><button class="btn btnHeader btn-category-details btn-animated w-75 m-1"> Esplora la categoria: {{$announcement->category->name}}
-            </button></a> --}}
           </h5>
           <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement->title}}</h2>
           <div class="col-lg-7 col-md-7 col-sm-6 p-3">
-            <p>Pubblicato il: <em>{{$announcement->created_at->format('d/m/Y')}}</em></p>Inserito da: <b>{{$announcement->user->name ?? ''}}</b> 
+            <p>{{__('ui.on')}} : <em>{{$announcement->created_at->format('d/m/Y')}}</em></p>{{__('ui.posted_by')}}: <b>{{$announcement->user->name ?? ''}}</b> 
           </p>
           <h2 class="announcement_detail_price"> {{$announcement->price}} €</H2>
           </div>
@@ -60,21 +58,20 @@
                         <div class="d-flex justify-content-between rounded-3 p-2 mb-2"
                           style="background-color: #e6e6e6;">
                           <div>
-                            <p class="small text-muted mb-1">Inserzioni</p>
+                            <p class="small text-muted mb-1">{{__('ui.listings')}}</p>
                             <p class="mb-0">{{$announcement->user->announcements->count()}}</p>
                           </div>
                           <div class="px-3">
-                            <p class="small text-muted mb-1">Iscritto dal</p>
+                            <p class="small text-muted mb-1">{{__('ui.subscribed_by')}}</p>
                             <p class="mb-0">{{$announcement->user->created_at->format('d/m/Y')}}</p>
                           </div>
                           <div>
-                            <p class="small text-muted mb-1">Ultima Attività</p>
+                            <p class="small text-muted mb-1">{{__('ui.last_activity')}}</p>
                             <p class="mb-0">{{$latestannouncementbyuser[0]->created_at}}</p>
                           </div>
                         </div>
                         <div class="d-flex pt-1">
-                          <button type="button" class="btn btn_main btn-outline-primary me-1 flex-grow-1">Contatta</button>
-                          {{-- <button type="button" class="btn btn-primary flex-grow-1">Follow</button> --}}
+                          <button type="button" class="btn btn_main btn-outline-primary me-1 flex-grow-1">{{__('ui.contact_us')}}</button>
                         </div>
                       </div>
                     </div>

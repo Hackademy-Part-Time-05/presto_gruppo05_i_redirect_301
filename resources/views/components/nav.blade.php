@@ -7,7 +7,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Lingua
+             {{__('ui.languages')}}
             </a> 
           <ul class="dropdown-menu ">
             <li class="nav-item">
@@ -20,7 +20,7 @@
             @guest
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorie
+                {{__('ui.category')}}
               </a>    
               <ul class="dropdown-menu ">
                 @foreach ($categories as $category)
@@ -29,27 +29,27 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/register">Registrati</a>
+              <a class="nav-link " href="/register">{{__('ui.sign_in')}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/login">Accedi</a>
+              <a class="nav-link " href="/login">{{__('ui.log_in')}}</a>
             </li>
             
             @else      
              @if(Auth::user()->is_revisor)
             <li class="nav-item">
               <a class="nav-link  position-relative" aria-current="page" href="{{route('revisor.index')}}">
-              Zona revisore
+                {{__('ui.reviewer_area')}}
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-dark">{{App\Models\Announcement::toBeRevisionedCount()}}
             </a>
             </li>
           @endif
             <li class="nav-item">
-              <a href="{{route('announcements.create')}}" class="nav-item nav-link">+ Crea Annuncio</a>
+              <a href="{{route('announcements.create')}}" class="nav-item nav-link">+  {{__('ui.announcements')}}</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorie
+                {{__('ui.category')}}
               </a>    
               <ul class="dropdown-menu">
                 @foreach ($categories as $category)
@@ -65,7 +65,7 @@
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="dropdown-item">Esci</button>
+                        <button type="submit" class="dropdown-item">{{__('ui.sign_out')}}</button>
                     </form>
                 </li>
                 @endguest
@@ -76,7 +76,7 @@
             <form action="{{route('announcement.search')}}" method="GET" class="d-flex ">
               @csrf
               <button class="btn-search"><i class="fas fa-search"></i></button>
-              <input name="searched" class="input-search" type="search" placeholder="Cerca categoria" aria-label="Search">
+              <input name="searched" class="input-search" type="search" placeholder="{{__('ui.search_category')}}" aria-label="Search">
             </form>
           </div>
       </div>

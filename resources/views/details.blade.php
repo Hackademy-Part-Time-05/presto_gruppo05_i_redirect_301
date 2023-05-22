@@ -3,7 +3,7 @@
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <h1 class="display-4 mb-3 animated slideInDown">Esplora la categoria:</h1>
+                <h1 class="display-4 mb-3 animated slideInDown">{{__('ui.explore_the_category')}}:</h1>
                 <h2 class="display-1 mb-3 animated slideInDown fw-bold">{{$category->name}}</h2>
             </div>
             <div class="col-lg-6">
@@ -26,8 +26,8 @@
                     <x-cards :$announcement :category='$announcement->category'></x-cards>
                 @empty
                 <div class="col-12">
-                  <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                  <p class="h2">Pubblicane uno: <a href="{{route('announcements.create')}}" class="btn btnHeader btn-dark btn-animated">Nuovo Annuncio</a></p>
+                  <p class="h1">{{__('ui.no_ads_for_category')}}!</p>
+                  <p class="h2">{{__('ui.post_one')}}: <a href="{{route('announcements.create')}}" class="btn btnHeader btn-dark btn-animated">{{__('ui.announcements')}}</a></p>
                 </div>
               @endforelse
             {{$announcements->links()}}

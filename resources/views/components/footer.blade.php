@@ -12,20 +12,20 @@
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold ">Link utili</h6>
+          <h6 class="text-uppercase fw-bold ">{{__('ui.useful_links')}}</h6>
           <hr>
           <p class="linkveloci">
-            <a href="/login" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Il tuo account</a>
+            <a href="/login" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> {{__('ui.your_account')}}</a>
           </p>
           <p class="linkveloci">
-            <a href="{{route('become.revisor')}}" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Diventa un Affiliato!</a>
+            <a href="{{route('become.revisor')}}" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> {{__('ui.become_an_affiliate')}}!</a>
           </p>
           <p class="linkveloci">
-            <a href="/register" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> Registrati!</a>
+            <a href="/register" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> {{__('ui.sign_in')}}!</a>
           </p>
         </div>
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold">Contattaci</h6>
+          <h6 class="text-uppercase fw-bold"> {{__('ui.contact_us')}}</h6>
           <hr/>
           <p class="linkveloci"><i class="fas fa-home mr-3"></i> Italia</p>
           <p class="linkveloci"><i class="fas fa-envelope mr-3"></i> info@example.com</p>

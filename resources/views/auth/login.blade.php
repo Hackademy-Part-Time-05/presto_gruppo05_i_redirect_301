@@ -12,7 +12,7 @@
                 <div class="card-body p-md-5">
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Accedi su Presto.it </p>
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">{{__('ui.log_in_on')}} Presto.it </p>
                       <form class="mx-1 mx-md-4" action="{{ route('login') }}" method="POST">
                         @csrf
                         <div class="d-flex flex-row align-items-center mb-4">
@@ -34,7 +34,7 @@
                           </div>
                         </div>
                         <div class="d-flex justify-content-end">
-                          <button type="submit" class="btn buttonRound btn_main">Accedi</button>
+                          <button type="submit" class="btn buttonRound btn_main">{{__('ui.log_in')}}</button>
                         </div>
                       </form>
                     </div>
