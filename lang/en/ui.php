@@ -37,5 +37,6 @@ return[
     'explore_the_category'=>'Explore the category',
     'post_one'=>'Post one',
     'no_ads_for_category'=>'There are no advertisements for this category',
-    
+    'photo_preview'=>'Photo preview',
+    'delete'=>'delete',
 ];

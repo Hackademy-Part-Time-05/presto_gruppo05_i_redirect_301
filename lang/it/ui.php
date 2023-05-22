@@ -37,4 +37,6 @@ return[
     'explore_the_category'=>'Esplora la categoria',
     'post_one'=>'Pubblicane uno',
     'no_ads_for_category'=>'Non sono presenti annunci per questa categoria',
+    'photo_preview'=>'Anteprima foto',
+    'delete'=>'Cancella',
 ];
