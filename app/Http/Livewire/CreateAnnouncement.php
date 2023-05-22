@@ -21,6 +21,7 @@ class CreateAnnouncement extends Component
     public $category;
     public $temporary_images;
     public $images=[];
+    public $announcement;
 
     protected $rules = [
         'title' => 'required|min:4',
@@ -65,13 +66,18 @@ class CreateAnnouncement extends Component
     {
         $this->validate();
         $category = Category::find($this->category);
-        $announcement = $category->announcements()->create([
-            'title' => $this->title,
-            'body' => $this->body,
-            'price' => $this->price,
-        ]);
+        $this->announcement=Category::find($this->category)->announcements()->create($this->validate());
+        if(count($this->images)){
+            foreach($this->images as $image){
+                $this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+            }
+        }
+        $this->announcement->title=$this->title;
+        $this->announcement->body=$this->body;
+        $this->announcement->price=$this->price;
 
-        Auth::user()->announcements()->save($announcement);
+
+        Auth::user()->announcements()->save($this->announcement);
         session()->flash('message', 'Hai inserito con successo il tuo annuncio!');
         $this->cleanForm();
         
