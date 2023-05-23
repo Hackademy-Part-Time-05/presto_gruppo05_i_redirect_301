@@ -22,10 +22,11 @@
   </div>
   <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
     <div class="row align-items-start d-flex justify-content-center g-5">       
-      <x-carousel></x-carousel>
+      <x-carousel :images='$announcement_to_check->images' :announcement='$announcement_to_check'></x-carousel>
       <div class="col-lg-5 pt-4 col-md-12 col-sm-12 announcement-detail emulateclick_on_hover h-100 my-2">
         <h5>
         </h5>
+        <a class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement_to_check->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement_to_check->category->name)}}</a>
         <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement_to_check->title}}</h2>
         <div class="col-lg-7 col-md-7 col-sm-6 p-3">
           <p>{{__('ui.on')}}: <em>{{$announcement_to_check->created_at->format('d/m/Y')}}</em></p>{{__('ui.posted_by')}}: <b>{{$announcement_to_check->user->name ?? ''}}</b> 
