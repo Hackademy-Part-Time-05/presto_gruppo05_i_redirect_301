@@ -367,6 +367,12 @@
 
 }
 
+.card-image {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
 .btn_categories {
   border: #2E6B9A 2px solid !important;
   background: white;
@@ -887,6 +893,17 @@ html {
 .emulateclick_on_hover {
   transition: .3s;
   box-shadow: #757575 10px 10px 10px;
+}
+
+
+.btn_create_announcement {
+  background-color: #2E6B9A;
+  color: white;
+}
+
+.btn_create_announcement:hover {
+  background-color: #3e3e3e;
+  color: white;
 }
 
 
