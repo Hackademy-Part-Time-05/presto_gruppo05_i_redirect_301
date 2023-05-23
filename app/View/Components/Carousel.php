@@ -13,10 +13,12 @@ class Carousel extends Component
      */
 
     public $images;
+    public $announcement;
 
-    public function __construct($images)
+    public function __construct($images, $announcement)
     {
         $this->images = $images;
+        $this->announcement = $announcement;
     }
 
     /**
