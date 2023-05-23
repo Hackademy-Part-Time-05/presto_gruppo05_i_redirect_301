@@ -12,6 +12,11 @@
               <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">{{__('ui.announcements')}}! </p>
+                  @if(session()->has('message'))
+                  <div class="text-center mb-5 mx-1 mx-md-4 mt-4 alert alert-success">
+                      {{session('message')}}
+                  </div>
+                  @endif
                   <form class="mx-1 mx-md-4" wire:submit.prevent="store">
                     @csrf
                     <div class="d-flex flex-row align-items-center mb-4">
@@ -20,7 +25,7 @@
                          <select wire:model.defer="category" id="category" class=" @error('title') is-invalid @enderror">
                           <option value="">{{__('ui.select')}}</option>
                           @foreach ($categories as $category)
-                            <option value="{{$category->id}}"> {{$category->name}}</option>
+                            <option value="{{$category->id}}">{{__('ui.'.$announcement_to_check->category->name)}}</option>
                           @endforeach
                         </select> 
                       </div>
