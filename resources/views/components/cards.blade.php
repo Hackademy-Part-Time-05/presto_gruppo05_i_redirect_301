@@ -3,7 +3,7 @@
         <div class="col-md-4 d-flex justify-content-center align-content-center">
           <img class="img-fluid py-1 img-responsive rounded product-image card-image rounded-4" src=" 
             @if ($announcement->images->first() != null)
-              {{Storage::url($announcement->images->first()->path)}}
+              {{$announcement->images()->first()->getUrl(400,300)}}
             @else
               /media/Presto Logo Carousel.png
             @endif
