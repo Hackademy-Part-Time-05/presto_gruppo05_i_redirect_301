@@ -2,10 +2,17 @@
     <div class="carousel-container position-relative row">
         <div id="myCarousel" class=" carousel slide px-0 " data-ride="carousel">
             <div class="carousel-inner rounded-4 ">
-                <div class="carousel-item active" data-slide-number="0">
-                    <img src="https://picsum.photos/1000/701" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
-                </div>
-                <div class="carousel-item" data-slide-number="1">
+                @foreach ($images as $image)
+
+                    <div class="carousel-item active" data-slide-number="{{$loop->index}}">
+                        <img src="{{Storage::url($image->path)}}" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+                    </div>
+
+                @endforeach
+
+
+
+                {{-- <div class="carousel-item" data-slide-number="1">
                     <img src="https://picsum.photos/1000/702" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/tXqVe7oO-go/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
                 </div>
                 <div class="carousel-item" data-slide-number="2">
@@ -19,7 +26,8 @@
                 </div>
                 <div class="carousel-item" data-slide-number="5">
                     <img src="https://picsum.photos/1000/706" class="d-block w-100" alt="..." data-remote="https://source.unsplash.com/CSIcgaLiFO0/" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
-                </div>
+                </div> --}}
+            
             </div>
         </div>
         
@@ -28,9 +36,19 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row mx-0">
-                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+
+                        @foreach ($images as $image)
+
+                            <div id="carousel-selector-{{$loop->index}}" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="...">
+                            </div>
+    
+                        @endforeach
+
+                        {{-- <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
                             <img src="https://picsum.photos/1000/701" class="img-fluid" alt="...">
                         </div>
+
                         <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
                             <img src="https://picsum.photos/1000/702" class="img-fluid" alt="...">
                         </div>
@@ -45,7 +63,8 @@
                         </div>
                         <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
                             <img src="https://picsum.photos/1000/706" class="img-fluid" alt="...">
-                        </div>
+                        </div> --}}
+                        
                     </div>
                 </div>
                 <div class="carousel-item">

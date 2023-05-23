@@ -1,6 +1,11 @@
    <div class="col-md-8 g-3 card_product">
       <div class="row p-2 bg-white border rounded-5 wrapper-shadow">
-        <div class="col-md-3 "><img class="img-fluid img-responsive rounded product-image rounded-4" src="https://picsum.photos/200/{{200+$announcement->id}}"></div>
+        <div class="col-md-3 "><img class="img-fluid img-responsive rounded product-image rounded-4" src=" @if ($announcement->images->first() != null)
+          {{Storage::url($announcement->images->first()->path)}}
+        @else
+          https://picsum.photos/200
+        @endif
+          "></div>
         <div class="col-md-6 mt-4">
           <h5>{{$announcement->title}}</h5>
           <div class="d-flex flex-row">

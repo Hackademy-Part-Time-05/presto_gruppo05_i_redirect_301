@@ -21,8 +21,9 @@
       </svg>
     </div>
     <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
-      <div class="row align-items-start d-flex justify-content-center g-5">       
-        <x-carousel></x-carousel>
+      <div class="row align-items-start d-flex justify-content-center g-5"> 
+              {{-- {{dd($announcement->images)}} --}}
+        <x-carousel :images='$announcement->images'></x-carousel>
         <div class="col-lg-5 pt-4 col-md-12 col-sm-12 emulateclick_on_hover m-bottom-3 announcement-detail h-100 my-2">
           <h5>
           </h5>
