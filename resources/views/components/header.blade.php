@@ -1,5 +1,10 @@
 <div class="container-fluid hero-header bg-main py-5 mb-5">
   <div class="container py-5">
+    @if(session()->has('message'))
+    <div class="flex flex-row justify-center my-2 alert alert-success">
+      {{session('message')}}
+    </div>
+  @endif
       <div class="row g-5 align-items-center">
           <div class="col-lg-6">
               <h1 class="display-4 mb-3 animated slideInDown">{{__('ui.welcome')}} presto.it!</h1>
