@@ -2,16 +2,17 @@
     <div class="carousel-container position-relative row">
         <div id="myCarousel" class=" carousel slide px-0 " data-ride="carousel">
             <div class="carousel-inner rounded-4 ">
-                @if ($images != null)
-                    @foreach ($images as $image)
-                        <div class="carousel-item @if ($loop->index == 0) active @endif" data-slide-number="{{$loop->index}}">
-                            <img src="{{Storage::url($image->path)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{Storage::url($image->path)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
-                        </div>
-                    @endforeach
+                @if ($images->isEmpty())
+                {{-- {{dd($images)}} --}}
+                <div class="carousel-item active" data-slide-number="0">
+                    <img src="/media/Presto Logo Carousel.png" class="d-block w-100" alt="no_image" data-remote="/media/Presto Logo Carousel.png" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+                </div>
                 @else
-                    <div class="carousel-item active" data-slide-number="0">
-                        <img src="https://picsum.photos/400/300" class="d-block w-100" alt="no_image" data-remote="https://picsum.photos/400/300" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
-                    </div>
+                @foreach ($images as $image)
+                <div class="carousel-item @if ($loop->index == 0) active @endif" data-slide-number="{{$loop->index}}">
+                    <img src="{{Storage::url($image->path)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{Storage::url($image->path)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+                </div>
+                @endforeach
                 @endif
             </div>
         </div>
@@ -20,17 +21,17 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row mx-0">
-                        @if ($images != null)
-                            @foreach ($images as $image)
-                                <div id="carousel-selector-{{$loop->index}}" class="thumb col-4 col-sm-2 px-1 py-2 @if ($loop->index == 0) selected @endif
-                                " data-target="#myCarousel" data-slide-to="{{$loop->index}}">
-                                    <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="...">
-                                </div>
-                            @endforeach
+                        @if ($images->isEmpty())
+                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                            <img src="/media/Presto Logo Carousel.png" class="img-fluid" alt="...">
+                        </div>
                         @else
-                            <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
-                                <img src="https://picsum.photos/400/300" class="img-fluid" alt="...">
-                            </div>
+                        @foreach ($images as $image)
+                        <div id="carousel-selector-{{$loop->index}}" class="thumb col-4 col-sm-2 px-1 py-2 @if ($loop->index == 0) selected @endif
+                            " data-target="#myCarousel" data-slide-to="{{$loop->index}}">
+                            <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="...">
+                        </div>
+                        @endforeach
                         @endif
                     </div>
                 </div>
