@@ -20,7 +20,7 @@
                          <select wire:model.defer="category" id="category" class=" @error('title') is-invalid @enderror">
                           <option value="">{{__('ui.select')}}</option>
                           @foreach ($categories as $category)
-                            <option value="{{$category->id}}"> {{$category->name}}</option>
+                            <option value="{{$category->id}}">{{__('ui.'.$announcement_to_check->category->name)}}</option>
                           @endforeach
                         </select> 
                       </div>
