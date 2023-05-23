@@ -7,8 +7,8 @@
           <hr>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-             magnam error fugiat laborum dicta adipisci, voluptatum,
-             distinctio quos enim illum aliquid ex, suscipit numquam facilis quaerat omnis odio cum est.
+            magnam error fugiat laborum dicta adipisci, voluptatum,
+            distinctio quos enim illum aliquid ex, suscipit numquam facilis quaerat omnis odio cum est.
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -17,43 +17,48 @@
           <p class="linkveloci">
             <a href="/login" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> {{__('ui.your_account')}}</a>
           </p>
-<!-- Button trigger modal -->
-@guest
-
-@else  
-  <p class="linkveloci text-dark nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <i class="fa-solid fa-arrow-right"></i> {{__('ui.become_an_affiliate')}}!
-  </p>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="flex-grow-1 ms-3">
-          <h5 class="mb-1"><b>{{ auth()->user()->name }}</b></h5>
-          <p class="mb-2 pb-1" style="color: #424242;">{{ auth()->user()->email }}</p>
-            <div>
-              <p class="small text-muted mb-1">{{__('ui.listings')}}</p>
-              <p class="mb-0">{{ auth()->user()->announcements->count()}}</p>
+          <!-- Button trigger modal -->
+          @guest
+          
+          @else
+          @if (Auth::user()->is_revisor)
+          
+          @else
+          
+          <p class="linkveloci text-dark nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="fa-solid fa-arrow-right"></i> {{__('ui.become_an_affiliate')}}!
+          </p>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mb-1"><b>{{ auth()->user()->name }}</b></h5>
+                    <p class="mb-2 pb-1" style="color: #424242;">{{ auth()->user()->email }}</p>
+                    <div>
+                      <p class="small text-muted mb-1">{{__('ui.listings')}}</p>
+                      <p class="mb-0">{{ auth()->user()->announcements->count()}}</p>
+                    </div>
+                    <div >
+                      <p class="small text-muted mb-1">{{__('ui.subscribed_by')}}</p>
+                      <p class="mb-0">{{ auth()->user()->created_at->format('d/m/Y')}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-main rounded-5 btn-danger m-1" data-bs-dismiss="modal">{{__('ui.refuses')}}</button>
+                  <button type="submit" class="btn btn-main btn-success rounded-5 "><a href="{{route('become.revisor')}}" class="nav-link">{{__('ui.become_an_affiliate')}}!</a></button>
+                </div>
+              </div>
             </div>
-            <div >
-              <p class="small text-muted mb-1">{{__('ui.subscribed_by')}}</p>
-              <p class="mb-0">{{ auth()->user()->created_at->format('d/m/Y')}}</p>
-            </div>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-main rounded-5 btn-danger m-1" data-bs-dismiss="modal">{{__('ui.refuses')}}</button>
-          <button type="submit" class="btn btn-main btn-success rounded-5 "><a href="{{route('become.revisor')}}" class="nav-link">{{__('ui.become_an_affiliate')}}!</a></button>
-      </div>
-    </div>
-  </div>
-</div>  
-@endguest
+          </div>  
+          @endif
+          @endguest
           <p class="linkveloci">
             <a href="/register" class="text-dark nav-link"><i class="fa-solid fa-arrow-right"></i> {{__('ui.sign_in')}}!</a>
           </p>
@@ -67,4 +72,4 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer>

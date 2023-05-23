@@ -49,4 +49,5 @@ return[
     'Musica'=>'Music',
     'Animali'=>'Animals',
     'Market'=>'Market',
+    'Seleziona'=>'Select',
 ];
