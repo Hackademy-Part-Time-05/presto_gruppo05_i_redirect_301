@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top ">
-  <a href="/" class="navbar-brand d-flex ms-2"><img src="/media/Presto logo Main.png" alt="Presto.it" class=" w-25"></a>
+  <a href="/" class="navbar-brand d-flex ms-2"><img src="/media/Presto logo Main.png" alt="Logo"  height="50" class="w-100 d-inline-block align-text-top"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
