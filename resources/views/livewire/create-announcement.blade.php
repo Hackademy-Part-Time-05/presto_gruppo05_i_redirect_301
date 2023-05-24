@@ -14,7 +14,7 @@
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">{{__('ui.announcements')}}! </p>
                   @if(session()->has('message'))
                   <div class="text-center mb-5 mx-1 mx-md-4 mt-4 alert alert-success">
-                      {{session('message')}}
+                    {{__('ui.well_done')}}
                   </div>
                   @endif
                   <form class="mx-1 mx-md-4" wire:submit.prevent="store">

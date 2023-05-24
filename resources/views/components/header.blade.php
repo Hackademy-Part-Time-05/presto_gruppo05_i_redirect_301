@@ -1,10 +1,14 @@
 <div class="container-fluid hero-header bg-main py-5 mb-5">
   <div class="container py-5">
-    @if(session()->has('message'))
-    <div class="flex flex-row justify-center my-2 alert alert-success">
-      {{session('message')}}
+    @if(session()->has('request'))
+    <div class="flex flex-row justify-center text-center my-2 alert alert-success">
+        {{__('ui.well_done_revisor')}}
     </div>
-  @endif
+    @elseif (session()->has('become'))
+    <div class="flex flex-row justify-center text-center my-2 alert alert-success">
+      {{__('ui.revisor_accepted')}}
+    </div>
+    @endif
       <div class="row g-5 align-items-center">
           <div class="col-lg-6">
               <h1 class="display-4 mb-3 animated slideInDown">{{__('ui.welcome')}} <img src="/media/Presto logo Main.png" alt="Logo"  height="50"></h1>

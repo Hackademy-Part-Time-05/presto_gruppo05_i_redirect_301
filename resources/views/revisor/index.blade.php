@@ -4,6 +4,15 @@
         <div class="row g-5 align-items-center">
             <div class="col-12">
                 <h1 class="display-4  mt-3 pt-3 animated slideInDown fw-bold text-center">{{__('ui.reviewer_area')}}</h1>
+                @if(session()->has('messageS'))
+                <div class="text-center mb-5 mx-1 mx-md-4 mt-4 alert alert-success  mt-5">
+                  {{__('ui.congratulation_accepted')}}
+                </div>
+                @elseif (session()->has('messageR'))
+                <div class="text-center mb-5 mx-1 mx-md-4 mt-4 alert alert-danger  mt-5">
+                  {{__('ui.congratulation_rejected')}}
+                </div>
+                @endif
             </div>
         </div>
     </div>
@@ -24,8 +33,6 @@
     <div class="row align-items-start d-flex justify-content-center g-5">       
       <x-carousel :images='$announcement_to_check->images' :announcement='$announcement_to_check'></x-carousel>
       <div class="col-lg-5 pt-4 col-md-12 col-sm-12 announcement-detail emulateclick_on_hover h-100 my-2">
-        <h5>
-        </h5>
         <a class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement_to_check->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement_to_check->category->name)}}</a>
         <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement_to_check->title}}</h2>
         <div class="col-lg-7 col-md-7 col-sm-6 p-3">

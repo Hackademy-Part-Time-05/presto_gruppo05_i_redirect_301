@@ -50,4 +50,9 @@ return[
     'Animali'=>'Animals',
     'Market'=>'Market',
     'Seleziona'=>'Select',
+    'well_done'=>'You have successfully placed your ad!',
+    'well_done_revisor'=>'Compliments! You have successfully applied to become a reviewer.',
+    'revisor_accepted'=>'Congratulations! The user has become a reviewer.',
+    'congratulation_rejected'=>'Congratulations, ad rejected',
+    'congratulation_accepted'=>'Congratulations, ad accepted',
 ];

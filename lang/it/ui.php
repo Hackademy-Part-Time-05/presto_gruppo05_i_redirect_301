@@ -50,4 +50,9 @@ return[
     'Animali'=>'Animali',
     'Market'=>'Market',
     'Seleziona'=>'Seleziona',
+    'well_done'=>'Hai inserito con successo il tuo annuncio!',
+    'well_done_revisor'=>'Congratulazioni! Ti sei candidato con successo per diventare un revisore.',
+    'revisor_accepted'=>'Complimenti! L\'utente è diventato revisore',
+    'congratulation_rejected'=>'Complimenti ,annuncio rifiutato',
+    'congratulation_accepted'=>'Congratulazioni, annuncio accettato',
 ];

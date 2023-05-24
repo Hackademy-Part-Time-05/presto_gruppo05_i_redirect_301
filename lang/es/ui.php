@@ -16,7 +16,7 @@ return[
     'cancel'=>'Cancelar',
     'useful_links'=>'Enlaces útiles',
     'your_account'=>'Su cuenta',
-    'become_an_affiliate'=>'Su cuenta',
+    'become_an_affiliate'=>'convertirse en un afiliado',
     'contact_us'=>'Contáctenos',
     'search_category'=>'Busca categoría',
     'select'=>'Seleccionar',
@@ -50,4 +50,9 @@ return[
     'Animali'=>'Animales',
     'Market'=>'Mercado',
     'Seleziona'=>'Selecciona',
+    'well_done'=>'¡Ha colocado con éxito su anuncio!',
+    'well_done_revisor'=>'Felicitaciones! Ha solicitado con éxito convertirse en revisor.',
+    'revisor_accepted'=>'Felicitaciones! El usuario se ha convertido en revisor.',
+    'congratulation_rejected'=>'Felicitaciones, anuncio rechazado',
+    'congratulation_accepted'=>'Felicitaciones, anuncio aceptado',
 ];
