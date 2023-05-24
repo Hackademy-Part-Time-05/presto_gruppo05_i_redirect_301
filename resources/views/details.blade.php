@@ -4,7 +4,7 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <h1 class="display-4 mb-3 animated slideInDown">{{__('ui.explore_the_category')}}:</h1>
-                <h2 class="display-1 mb-3 animated slideInDown fw-bold">{{$category->name}}</h2>
+                <h2 class="display-1 mb-3 animated slideInDown fw-bold">{{__('ui.'.$category->name)}}</h2>
             </div>
             <div class="col-lg-6">
                 <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="https://www.clickcease.com/blog/wp-content/uploads/2019/10/digital-advertising-display-network.jpg"
