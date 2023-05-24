@@ -917,3 +917,23 @@ html {
   background-size:contain;
   background-repeat: no-repeat;
 }
+
+/*-------------------SOCIAL---------------------*/
+.social{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2E6B9A;
+  font-size: 25px;
+  color: #ACC4D7;
+  border-radius: 3px;
+}
+
+.social:hover{
+  background-color: #ACC4D7;
+  color: #2E6B9A;
+}
+
+/*--------------------fine SOCIAL ------------------*/

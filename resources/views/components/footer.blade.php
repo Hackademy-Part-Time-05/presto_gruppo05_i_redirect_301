@@ -3,13 +3,18 @@
     <div class="container text-center text-md-start mt-5">
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold">Presto.it</h6>
+          <h6 class="text-uppercase fw-bold">reADy.it</h6>
           <hr>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            magnam error fugiat laborum dicta adipisci, voluptatum,
-            distinctio quos enim illum aliquid ex, suscipit numquam facilis quaerat omnis odio cum est.
+            Che sia per inseguire un sogno, vivere una passione o per rispondere ad un'esigenza: su reADy.it tutti trovano sempre la soluzione più smart.
           </p>
+          <hr>
+          <div class="row p-1">
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold ">{{__('ui.useful_links')}}</h6>
@@ -67,7 +72,7 @@
           <h6 class="text-uppercase fw-bold"> {{__('ui.contact_us')}}</h6>
           <hr/>
           <p class="linkveloci"><i class="fas fa-home mr-3"></i> Italia</p>
-          <p class="linkveloci"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p class="linkveloci"><i class="fas fa-envelope mr-3"></i> ready@info.it</p>
           <p class="linkveloci"><i class="fa-solid fa-phone trin-trin"></i> 32491043913</p>
         </div>
       </div>
