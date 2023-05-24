@@ -5,9 +5,9 @@
         <div class="col-lg-6">
           <nav aria-label="breadcrumb animated slideInDown">
             <ol class="mt-5 breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">{{__('ui.'.$announcement->category->name)}}</a></li>
-              <li class="breadcrumb-item active" aria-current="page">{{$announcement->title}}</li>
+              <li class="breadcrumb-item"><a href="{{Route('welcome')}}" class="text-decoration-none text-dark">Home</a></li>
+              <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">{{__('ui.'.$announcement->category->name)}}</a></li>
+              <li class="breadcrumb-item active text-dark" aria-current="page">{{$announcement->title}}</li>
             </ol>
           </nav>
         </div>
