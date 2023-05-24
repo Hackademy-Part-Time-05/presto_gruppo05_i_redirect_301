@@ -8,12 +8,17 @@
           <p>
             Che sia per inseguire un sogno, vivere una passione o per rispondere ad un'esigenza: su reADy.it tutti trovano sempre la soluzione più smart.
           </p>
+
+        </div>
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Seguici anche</h6>
           <hr>
           <div class="row p-1">
             <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
             <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
