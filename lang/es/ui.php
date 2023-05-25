@@ -55,6 +55,8 @@ return[
     'revisor_accepted'=>'Felicitaciones! El usuario se ha convertido en revisor.',
     'congratulation_rejected'=>'Felicitaciones, anuncio rechazado',
     'congratulation_accepted'=>'Felicitaciones, anuncio aceptado',
+    'follow_us_too'=>'síguenos también',
+    'Description_reAdy'=>'Ya sea para perseguir un sueño, vivir una pasión o responder a una necesidad: todo el mundo puede encontrar siempre la solución más inteligente en reADy.it.',
     'What_are_you_looking'=>'Qué estás buscando',
     'rent'=>'alquilar.', 
     'give'=>'dar.', 

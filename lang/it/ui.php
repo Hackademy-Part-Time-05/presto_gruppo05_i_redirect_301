@@ -55,6 +55,8 @@ return[
     'revisor_accepted'=>'Complimenti! L\'utente è diventato revisore',
     'congratulation_rejected'=>'Complimenti ,annuncio rifiutato',
     'congratulation_accepted'=>'Congratulazioni, annuncio accettato',
+    'follow_us_too'=>'Seguici anche',
+    'Description_reAdy'=>'Che sia per inseguire un sogno, vivere una passione o per rispondere ad un esigenza: su reADy.it tutti trovano sempre la soluzione più smart.',
     'What_are_you_looking'=>'Cosa cerchi da',
     'rent'=>'affittare.', 
     'give'=>'regalare.', 

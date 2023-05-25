@@ -55,6 +55,8 @@ return[
     'revisor_accepted'=>'Congratulations! The user has become a reviewer.',
     'congratulation_rejected'=>'Congratulations, ad rejected',
     'congratulation_accepted'=>'Congratulations, ad accepted',
+    'follow_us_too'=>'Follow us too',
+    'Description_reAdy'=>'Whether it is to pursue a dream, live a passion or to respond to a need: everyone can always find the smartest solution on reADy.it.',
     'What_are_you_looking'=>'What are you looking for',
     'rent'=>'rent.', 
     'give'=>'give.', 
