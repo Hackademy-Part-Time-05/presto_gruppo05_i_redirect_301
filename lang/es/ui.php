@@ -55,4 +55,10 @@ return[
     'revisor_accepted'=>'Felicitaciones! El usuario se ha convertido en revisor.',
     'congratulation_rejected'=>'Felicitaciones, anuncio rechazado',
     'congratulation_accepted'=>'Felicitaciones, anuncio aceptado',
+    'What_are_you_looking'=>'Qué estás buscando',
+    'rent'=>'alquilar.', 
+    'give'=>'dar.', 
+    'buy'=>'comprar.', 
+    'do'=>'hacer.', 
+    'sell'=>'vender.',
 ];

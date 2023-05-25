@@ -12,6 +12,7 @@
       <div class="row g-5 align-items-center">
           <div class="col-lg-6">
               <h1 class="display-4 mb-3 animated slideInDown">{{__('ui.welcome')}} <img src="/media/Presto logo Main.png" alt="Logo"  height="50"></h1>
+              <div><h2 class="mb-3">{{__('ui.What_are_you_looking')}} <span class="txt-rotate" data-period="2000" data-rotate='[ "{{__('ui.rent')}}", "{{__('ui.buy')}}", "{{__('ui.give')}}", "{{__('ui.do')}}", "{{__('ui.sell')}}" ]'></span></h2></div>
               <a href="{{route('announcements.create')}}" class="btn buttonRound btn_main btn_create_announcement btn-sm py-2 px-4">{{__('ui.announcements')}}</a>
           </div>
           <div class="col-lg-6">

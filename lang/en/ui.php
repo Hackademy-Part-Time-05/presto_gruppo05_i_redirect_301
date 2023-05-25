@@ -55,4 +55,10 @@ return[
     'revisor_accepted'=>'Congratulations! The user has become a reviewer.',
     'congratulation_rejected'=>'Congratulations, ad rejected',
     'congratulation_accepted'=>'Congratulations, ad accepted',
+    'What_are_you_looking'=>'What are you looking for',
+    'rent'=>'rent.', 
+    'give'=>'give.', 
+    'buy'=>'buy.', 
+    'do'=>'do.', 
+    'sell'=>'sell.',
 ];
