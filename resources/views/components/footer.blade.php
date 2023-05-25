@@ -6,19 +6,19 @@
           <h6 class="text-uppercase fw-bold">reADy.it</h6>
           <hr>
           <p>
-            Che sia per inseguire un sogno, vivere una passione o per rispondere ad un'esigenza: su reADy.it tutti trovano sempre la soluzione più smart.
+            {{__('ui.Description_reAdy')}}
           </p>
 
         </div>
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold">Seguici anche</h6>
+          <h6 class="text-uppercase fw-bold">{{__('ui.follow_us_too')}}</h6>
           <hr>
           <div class="row p-1">
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="" class="social m-2 text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" class="social m-2 text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social m-2 text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" class="social m-2 text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/" class="social m-2 text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/" class="social m-2 text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

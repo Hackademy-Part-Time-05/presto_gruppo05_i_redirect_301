@@ -19,6 +19,9 @@
             <li class="nav-item">
               <x-_locale lang="es"/>
             </li>
+            <li class="nav-item">
+              <x-_locale lang="de"/>
+            </li>
           </ul>
             @guest
             <li class="nav-item dropdown">
