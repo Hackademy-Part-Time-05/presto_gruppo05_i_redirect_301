@@ -22,6 +22,13 @@ class RevisorController extends Controller
         return view('revisor.index', compact('announcement_to_check', 'latestannouncementbyuser'));
     }
 
+    public function dashboard(){
+        $announcements_to_check = Announcement::where('is_accepted',null)->paginate(5);
+        $rejected_announcement = Announcement::where('is_accepted',0)->paginate(5);
+        return view('revisor.dashboard', compact('announcements_to_check', 'rejected_announcement'));
+    }
+
+
     public function acceptAnnouncement(Announcement $announcement){
         $announcement->setAccepted(true);
         return redirect()->back()->with('messageS', 'Complimenti ,annuncio accettato');

@@ -20,11 +20,19 @@ use Laravel\Fortify\Fortify;
 Route::get('/', [Frontcontroller::class, 'welcome'])->name('welcome');
 Route::get('/categoria/{category}', [Frontcontroller::class, 'categoryShow'])->name('categoryShow');
 
+Route::get('/area-personale/{user_name}', [Frontcontroller::class, 'userShow'])->middleware('auth')->name('userShow');
+
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncements'])->middleware('auth')->name('announcements.create');
+
+Route::get('/modifica/annuncio/{ad_id}',[AnnouncementController::class, 'modifyAnnouncements'])->middleware('auth')->name('announcements.modify');
+
 Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->name('announcements.details');
 
 //home revisore
 Route::get('/revisor/home', [RevisorController::class,'index'])->middleware('isRevisor')->name('revisor.index');
+
+//dashboard revisore
+Route::get('/revisor/dashboard', [RevisorController::class,'dashboard'])->middleware('isRevisor')->name('revisor.dashboard');
 
 //accetta annuncio
 Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class,'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Announcement;
 use App\Models\Category;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class Frontcontroller extends Controller
@@ -18,6 +19,23 @@ class Frontcontroller extends Controller
     {
         $announcements = $category->announcements()->where('is_accepted', true)->paginate(5);
         return view('details', compact('category', 'announcements'));
+    }
+
+    public function userShow(User $user)
+    {
+        $announcements_accepted = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', true)->paginate(5);
+
+        $announcements_to_be_revisioned = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', null)->paginate(5);
+
+        $announcements_rejected = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', false)->paginate(5);
+
+        $latest = 0;
+
+        foreach(Announcement::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->take(1)->get() as $cache) {
+            $latest = $cache->created_at;
+        }
+        
+        return view('auth.user', compact('announcements_accepted', 'announcements_to_be_revisioned', 'announcements_rejected', 'latest'));
     }
 
     public function searchAnnouncement(Request $request)

@@ -29,7 +29,7 @@
         <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
             <div class="row align-content-start justify-content-center g-4">
                 @foreach ($announcements as $announcement)
-                <x-cards :$announcement :category='$announcement->category'></x-cards>
+                    <x-cards :$announcement :category='$announcement->category'></x-cards>
                 @endforeach
             </div>
         </div>
