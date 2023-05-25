@@ -12,8 +12,8 @@ class AnnouncementController extends Controller
         return view('announcements.create');
     }
 
-    public function modifyAnnouncements() {
-        return view('announcements.modify');
+    public function modifyAnnouncements(Announcement $announcement) {
+        return view('announcements.modify', compact('announcement'));
     }
 
     public function showAnnouncement(Announcement $announcement){

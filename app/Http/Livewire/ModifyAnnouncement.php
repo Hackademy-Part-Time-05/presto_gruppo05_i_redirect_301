@@ -21,7 +21,17 @@ class ModifyAnnouncement extends Component
     public $temporary_images;
     public $images=[];
     public $announcement;
-
+    
+    
+    public function mount($announcement) {
+        $this->announcement=$announcement;
+        $this->title = $announcement->title;
+        $this->body = $announcement->body;
+        $this->price = $announcement->price;
+        $this->category = $announcement->category->id;
+        $this->images = $announcement->images;
+        $this->temporary_images = $announcement->images;
+    }
     protected $rules = [
         'title' => 'required|min:4',
         'body' => 'required',
@@ -102,7 +112,8 @@ class ModifyAnnouncement extends Component
         $this->temporary_images = [];
     }
 
-
+    
+    
     public function render()
     {
         return view('livewire.modify-announcement');

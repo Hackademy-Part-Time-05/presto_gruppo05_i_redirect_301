@@ -40,7 +40,7 @@
           @auth
           @if(Auth::user()->is_revisor & $announcement->is_accepted != null)
           @if (Auth::user()->id == $announcement->user->id)
-            <a href="{{route('announcements.modify', ['ad_id' => $announcement->id])}}" class="btn btn_main btn_categories success btn-sm mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">Modifica</a>
+            <a href="{{route('announcements.modify', ['announcement' => $announcement->id])}}" class="btn btn_main btn_categories success btn-sm mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">Modifica</a>
           @endif
           <form action="{{route('revisor.set_revisionable', compact('announcement'))}}"   method="POST" class="">
             @csrf

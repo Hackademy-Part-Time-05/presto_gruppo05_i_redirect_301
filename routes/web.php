@@ -24,7 +24,7 @@ Route::get('/area-personale/{user_name}', [Frontcontroller::class, 'userShow'])-
 
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncements'])->middleware('auth')->name('announcements.create');
 
-Route::get('/modifica/annuncio/{ad_id}',[AnnouncementController::class, 'modifyAnnouncements'])->middleware('auth')->name('announcements.modify');
+Route::get('/modifica/annuncio/{announcement}',[AnnouncementController::class, 'modifyAnnouncements'])->middleware('auth')->name('announcements.modify');
 
 Route::get('/dettaglio/annuncio/{announcement}',[AnnouncementController::class, 'showAnnouncement'])->name('announcements.details');
 

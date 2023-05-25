@@ -1,4 +1,5 @@
 <section class="position-relative w-100 latest_announcements_section">
+    {{-- {{dd($announcement)}} --}}
     <div class="custom-shape-divider-bottom-1684350379">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -11,7 +12,7 @@
               <div class="card-body p-md-5">
                 <div class="row justify-content-center">
                   <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">{{__('ui.announcements')}}! </p>
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Modifica il tuo annuncio! </p>
                     @if(session()->has('message'))
                     <div class="text-center mb-5 mx-1 mx-md-4 mt-4 alert alert-success">
                       {{__('ui.well_done')}}
@@ -27,7 +28,7 @@
                             @foreach ($categories as $category)
                               <option value="{{$category->id}}"
                                 @if ($announcement->category->id == $category->id)
-                                    selected
+                                    {{'selected'}}
                                 @endif
                                 >
                                 {{__('ui.'.$category->name)}}</option>
@@ -38,7 +39,7 @@
                       <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
                           <label for="title">{{__('ui.ad_title')}}</label>
-                          <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror"/>
+                          <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror" value="test">
                           @error('title')
                           <div class=" text-danger">
                             {{$message}}
@@ -86,7 +87,7 @@
                           <div class="row border border-4 border-info rounded shadow py-4">
                             @foreach ($images as $key =>$image )
                             <div class="col my-3">
-                              <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}})"></div>
+                              <div class="img-preview mx-auto shadow rounded" style="background-image: url({{Storage::url($image->path)}})"></div>
                               <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>{{__('ui.delete')}}</button>
                             </div>
                             @endforeach
