@@ -68,4 +68,8 @@ return[
     'Region_of_residence'=>'Wohnort',
     'City_of_residence'=>'Stadt',
     'modify' => 'Bearbeiten',
+    'Announcements_posted'=>'Veröffentlichte anzeigen',
+    'Announcements_to_review'=>'Ankündigungen zur Überprüfung',
+    'Announcements_rejected'=>'Anzeigen abgelehnt',
+    'name'=>'Vorname',
 ];

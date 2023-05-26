@@ -68,4 +68,8 @@ return[
     'Region_of_residence'=>'Region of residence',
     'City_of_residence'=>'City of residence',
     'modify' => 'Modify',
+    'Announcements_posted'=>'Announcements posted',
+    'Announcements_to_review'=>'Announcements to review',
+    'Announcements_rejected'=>'Announcements rejected',
+    'name'=>'Name',
 ];

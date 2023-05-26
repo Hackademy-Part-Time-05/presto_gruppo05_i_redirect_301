@@ -68,4 +68,8 @@ return[
     'Region_of_residence'=>'Región de residencia',
     'City_of_residence'=>'Ciudad de residencia',
     'modify' => 'Editar',
+    'Announcements_posted'=>'Anuncios publicados',
+    'Announcements_to_review'=>'Anuncios para revisar',
+    'Announcements_rejected'=>'Anuncios rechazados',
+    'name'=>'Nombre de pila',
 ];
