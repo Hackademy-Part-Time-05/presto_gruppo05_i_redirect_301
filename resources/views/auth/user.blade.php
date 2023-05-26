@@ -131,8 +131,8 @@
                 <div class="col-sm-4 mb-3">
                   <div class="card h-100 announcement_detail_user">
                     <div class="card-body">
-                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Annunci accettati</i></h6>
-                      <small>prova</small>
+                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Annunci Pubblicati</i></h6>
+                      <small>{{$announcements_accepted}}</small>
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@
                     <div class="card h-100 announcement_detail_user">
                       <div class="card-body">
                         <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Annunci da revisionare</i></h6>
-                        <small>prova</small>
+                        <small>{{$announcements_to_be_revisioned}}</small>
                       </div>
                     </div>
                   </div>
@@ -148,7 +148,7 @@
                     <div class="card h-100 announcement_detail_user">
                       <div class="card-body">
                         <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">annunci respinti</i></h6>
-                        <small>prova</small>
+                        <small>{{$announcements_rejected}}</small>
                       </div>
                     </div>
                   </div>

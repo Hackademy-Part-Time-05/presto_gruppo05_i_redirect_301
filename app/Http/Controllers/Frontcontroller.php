@@ -23,11 +23,11 @@ class Frontcontroller extends Controller
 
     public function userShow(User $user)
     {
-        $announcements_accepted = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', true)->paginate(5);
+        $announcements_accepted = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', true)->count();
 
-        $announcements_to_be_revisioned = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', null)->paginate(5);
+        $announcements_to_be_revisioned = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', null)->count();
 
-        $announcements_rejected = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', false)->paginate(5);
+        $announcements_rejected = Announcement::where('user_id', auth()->user()->id)->where('is_accepted', false)->count();
 
         $latest = 0;
 
