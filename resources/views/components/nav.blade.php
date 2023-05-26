@@ -69,7 +69,7 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a href="{{route('userShow', ['user_name' => auth()->user()->name])}}" class="dropdown-item"> Profilo </a>
+                  <a href="{{route('userShow', ['user_name' => auth()->user()->name])}}" class="dropdown-item">{{__('ui.profile')}} </a>
                 </li>
                 <li>
                     <form action="/logout" method="POST">

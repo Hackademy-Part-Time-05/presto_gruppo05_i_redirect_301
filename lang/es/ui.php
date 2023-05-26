@@ -63,5 +63,9 @@ return[
     'buy'=>'comprar.', 
     'do'=>'hacer.', 
     'sell'=>'vender.',
+    'profile'=>'Perfil',
+    'Date_of_birth' =>'Fecha de nacimiento',
+    'Region_of_residence'=>'Región de residencia',
+    'City_of_residence'=>'Ciudad de residencia',
     'modify' => 'Editar',
 ];
