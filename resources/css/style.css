@@ -348,6 +348,17 @@
 
 /* ---------CARD By Elia----------- */
 
+.btn_modify {
+  background-color: gold !important;
+  border: #000000 2px solid !important;
+}
+
+.btn_modify:hover {
+  background-color: gold !important;
+  border: #000000 2px solid !important;
+  color: #000000 !important;
+}
+
 .btn_main {
   background-color: #ACC4D7;
   border: #000000 solid 2px;

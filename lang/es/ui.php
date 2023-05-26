@@ -63,4 +63,5 @@ return[
     'buy'=>'comprar.', 
     'do'=>'hacer.', 
     'sell'=>'vender.',
+    'modify' => 'Editar',
 ];

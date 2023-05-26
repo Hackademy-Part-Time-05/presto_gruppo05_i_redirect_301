@@ -63,4 +63,5 @@ return[
     'buy'=>'buy.', 
     'do'=>'do.', 
     'sell'=>'sell.',
+    'modify' => 'Modify',
 ];
