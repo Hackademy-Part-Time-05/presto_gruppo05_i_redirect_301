@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\File;
 
 class ModifyAnnouncement extends Component
 {
+    use WithFileUploads;
     public $title;
     public $body;
     public $price;
@@ -75,7 +76,9 @@ class ModifyAnnouncement extends Component
     {
         $this->validate();
         $category = Category::find($this->category);
-        $this->announcement=Category::find($this->category)->announcements()->create($this->validate());
+        $this->announcement=Announcement::find('id', $this->id)->get();
+        dd($this->announcement);
+
         if(count($this->images)){
             foreach($this->images as $image){
                 // $this->announcement->images()->create(['path'=>$image->store('images', 'public')]); 

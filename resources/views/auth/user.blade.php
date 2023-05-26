@@ -127,6 +127,32 @@
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-sm-4 mb-3">
+                  <div class="card h-100 announcement_detail_user">
+                    <div class="card-body">
+                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Annunci accettati</i></h6>
+                      <small>prova</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 ">
+                    <div class="card h-100 announcement_detail_user">
+                      <div class="card-body">
+                        <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Annunci da revisionare</i></h6>
+                        <small>prova</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mb-3">
+                    <div class="card h-100 announcement_detail_user">
+                      <div class="card-body">
+                        <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">annunci respinti</i></h6>
+                        <small>prova</small>
+                      </div>
+                    </div>
+                  </div>
+                
         </div>
         <div class="custom-shape-divider-top-1684351062">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

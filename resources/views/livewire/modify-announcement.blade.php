@@ -101,7 +101,7 @@
                     </form>
                   </div>
                   <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/11/19362653-1024x683.jpg"
                       class="img-fluid" alt="Sample image">
                   </div>
                 </div>
