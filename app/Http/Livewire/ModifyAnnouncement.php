@@ -81,7 +81,6 @@ class ModifyAnnouncement extends Component
         $this->validate();
         $category = Category::find($this->category);
         $this->announcement=Announcement::find('id', $announcement->id)->get();
-        dd($this->announcement);
 
         if(count($this->images)){
             foreach($this->images as $image){
