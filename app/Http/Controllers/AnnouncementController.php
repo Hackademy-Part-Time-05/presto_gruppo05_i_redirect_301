@@ -19,6 +19,7 @@ class AnnouncementController extends Controller
     public function showAnnouncement(Announcement $announcement){
         $latestannouncementbyuser = Announcement::where('user_id', $announcement->user->id)->orderBy('created_at', 'desc')->take(1)->get();
         // dd($latestannouncementbyuser);
+        $announcement->viewsCounter();
         return view('announcements.details', compact('announcement', 'latestannouncementbyuser'));
     }
 

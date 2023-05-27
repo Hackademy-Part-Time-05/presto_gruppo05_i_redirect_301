@@ -38,7 +38,7 @@
           class="btn buttonRound btn_main btn-sm" type="button" >{{__('ui.details')}}</a>
           <a href="{{ route('categoryShow', compact('category')) }}" class="btn btn_main btn_categories btn-sm mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement->category->name)}}</a>
           @auth
-          @if(Auth::user()->is_revisor & $announcement->is_accepted != null)
+          @if(Auth::user()->is_revisor && $announcement->is_accepted != null)
           @if (Auth::user()->id == $announcement->user->id)
             <a href="{{route('announcements.modify', ['announcement' => $announcement->id])}}" class="btn btn_main btn_categories success btn-sm mt-2 {{$announcement->category->name}}_background_card btn_modify buttonRound" type="button">{{__('ui.modify')}}</a>
           @endif

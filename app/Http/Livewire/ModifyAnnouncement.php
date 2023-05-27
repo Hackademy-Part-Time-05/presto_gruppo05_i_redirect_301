@@ -30,8 +30,12 @@ class ModifyAnnouncement extends Component
         $this->body = $announcement->body;
         $this->price = $announcement->price;
         $this->category = $announcement->category->id;
-        $this->images = $announcement->images;
-        $this->temporary_images = $announcement->images;
+        foreach($announcement->images as $key => $image) {
+            
+            $this->images[$key] = $image;
+            $this->temporary_images[$key] = $image;
+        }
+        // dd($this->temporary_images);
     }
     protected $rules = [
         'title' => 'required|min:4',
@@ -72,11 +76,11 @@ class ModifyAnnouncement extends Component
         }
     }
 
-    public function store()
+    public function store($announcement)
     {
         $this->validate();
         $category = Category::find($this->category);
-        $this->announcement=Announcement::find('id', $this->id)->get();
+        $this->announcement=Announcement::find('id', $announcement->id)->get();
         dd($this->announcement);
 
         if(count($this->images)){
