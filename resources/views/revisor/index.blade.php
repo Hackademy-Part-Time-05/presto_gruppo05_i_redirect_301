@@ -44,20 +44,46 @@
           <p class="announcement_detail_body p-3 h-100">
             {{$announcement_to_check->body}}
           </p>
-          {{-- <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
-           @if ($image->labels)
-          @foreach ($image->labels as $label )
-          <p class="d-inline">{{$label}}</p>
-          @endforeach 
-          @endif</div> --}}
+          <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
+            @foreach ($announcement_to_check->images as $image)
+              @if ($image->labels)
+                <b>Immagine {{$loop->index + 1}}</b>
+                <p class="d-inline">{{$image->labels}}</p>
+              @endif 
+            @endforeach
+          </div>
+          <br>
           <h5 class="title-announcement-detail">Revisione immagini</h5>
-          @foreach ($announcement_to_check->images as $image)
-          <p>Adulti:<span class="{{$image->adult}}"></span></p>
-          <p>Satira:<span class="{{$image->spoof}}"></span></p>
-          <p>Medicina:<span class="{{$image->medical}}"></span></p>
-          <p>Violenza:<span class="{{$image->violence}}"></span></p>
-          <p>Contenuto Ammiccante:<span class="{{$image->racy}}"></span></p>
-          @endforeach
+          <p>Adulti:
+            @foreach ($announcement_to_check->images as $image)
+              <span class="{{$image->adult}}"></span>
+            @endforeach
+          </p>
+          <p>Satira:
+            @foreach ($announcement_to_check->images as $image)
+              <span class="{{$image->spoof}}"></span>
+            @endforeach
+          </p>
+          <p>Medicina:
+            @foreach ($announcement_to_check->images as $image)
+              <span class="{{$image->medical}}"></span>
+            @endforeach
+          </p>
+          <p>Violenza:
+            @foreach ($announcement_to_check->images as $image)
+              <span class="{{$image->violence}}"></span>
+            @endforeach
+          </p>
+          <p>Contenuto Ammiccante:
+            @foreach ($announcement_to_check->images as $image)
+              <span class="{{$image->racy}}"></span>
+            @endforeach
+          </p>
+
+          
+          
+
+
           <div class="row justify-content-center py-4 revisor_buttons">
             <div class="col-5 col-md-4">
                 <form action="{{route('revisor.accept_announcement' , ['announcement'=>$announcement_to_check])}}" method="POST">

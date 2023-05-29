@@ -48,7 +48,7 @@
             <button type="submit" class="btn buttonRound btn-danger mt-2 btn-sm w-100">{{__('ui.cancel')}}</button>
           </form>
           @else
-          <form action="{{route('revisor.accept_announcement' , ['announcement'=>$announcement])}}" method="POST">
+          {{-- <form action="{{route('revisor.accept_announcement' , ['announcement'=>$announcement])}}" method="POST">
             @csrf
             @method('PATCH')
             <button type="submit" class="btn btn-main w-100 btn-success rounded-5 m-1">{{__('ui.accept')}}</button>
@@ -57,7 +57,7 @@
             @csrf
             @method('PATCH')
             <button type="submit" class="btn btn-main w-100 rounded-5 btn-danger m-1">{{__('ui.refuses')}}</button>
-          </form>
+          </form> --}}
           @endif
           @endauth
         </div>

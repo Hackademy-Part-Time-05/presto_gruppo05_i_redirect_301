@@ -22,6 +22,8 @@ Route::get('/categoria/{category}', [Frontcontroller::class, 'categoryShow'])->n
 
 Route::get('/area-personale/{user_name}', [Frontcontroller::class, 'userShow'])->middleware('auth')->name('userShow');
 
+Route::get('/meet-the-team', [Frontcontroller::class, 'meetTheTeam'])->name('meetTheTeam');
+
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncements'])->middleware('auth')->name('announcements.create');
 
 Route::get('/modifica/annuncio/{announcement}',[AnnouncementController::class, 'modifyAnnouncements'])->middleware('auth')->name('announcements.modify');

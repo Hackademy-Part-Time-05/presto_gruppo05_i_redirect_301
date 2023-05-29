@@ -17,7 +17,7 @@ class Frontcontroller extends Controller
 
     public function categoryShow(Category $category)
     {
-        $announcements = $category->announcements()->where('is_accepted', true)->paginate(5);
+        $announcements = $category->announcements()->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(5);
         return view('details', compact('category', 'announcements'));
     }
 
@@ -43,6 +43,10 @@ class Frontcontroller extends Controller
         $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
         // dd($announcements);
         return view('announcements.index', compact( 'announcements'));
+    }
+
+    public function meetTheTeam() {
+        return view('meet-the-team');
     }
 
  public function setLanguage($lang)

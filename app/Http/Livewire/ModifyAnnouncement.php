@@ -76,7 +76,7 @@ class ModifyAnnouncement extends Component
         }
     }
 
-    public function store($announcement)
+    public function save($announcement)
     {
         $this->validate();
         $category = Category::find($this->category);

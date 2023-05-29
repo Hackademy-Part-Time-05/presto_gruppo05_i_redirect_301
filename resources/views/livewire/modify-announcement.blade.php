@@ -18,7 +18,7 @@
                       {{__('ui.well_done')}}
                     </div>
                     @endif
-                    <form class="mx-1 mx-md-4" wire:submit.prevent="store">
+                    <form class="mx-1 mx-md-4" wire:submit.prevent="save">
                       @csrf
                       <div class="d-flex flex-row align-items-center mb-4">
                         <div class="form-outline flex-fill mb-0">
@@ -85,7 +85,7 @@
                       <div class="row">
                         <div class="col-12"><p>{{__('ui.photo_preview')}}:</p>
                           <div class="row border border-4 border-info rounded shadow py-4">
-                            @foreach ($images as $key =>$image )
+                            @foreach ($temporary_images as $key =>$image )
                             <div class="col my-3">
                               <div class="img-preview mx-auto shadow rounded" style="background-image: url({{Storage::url($image->path)}})"></div>
                               <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>{{__('ui.delete')}}</button>
@@ -101,7 +101,7 @@
                     </form>
                   </div>
                   <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                    <img src="https://www.creative-tim.com/blog/content/images/wordpress/2020/11/19362653-1024x683.jpg"
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                       class="img-fluid" alt="Sample image">
                   </div>
                 </div>
