@@ -44,6 +44,20 @@
           <p class="announcement_detail_body p-3 h-100">
             {{$announcement_to_check->body}}
           </p>
+          {{-- <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
+           @if ($image->labels)
+          @foreach ($image->labels as $label )
+          <p class="d-inline">{{$label}}</p>
+          @endforeach 
+          @endif</div> --}}
+          <h5 class="title-announcement-detail">Revisione immagini</h5>
+          @foreach ($announcement_to_check->images as $image)
+          <p>Adulti:<span class="{{$image->adult}}"></span></p>
+          <p>Satira:<span class="{{$image->spoof}}"></span></p>
+          <p>Medicina:<span class="{{$image->medical}}"></span></p>
+          <p>Violenza:<span class="{{$image->violence}}"></span></p>
+          <p>Contenuto Ammiccante:<span class="{{$image->racy}}"></span></p>
+          @endforeach
           <div class="row justify-content-center py-4 revisor_buttons">
             <div class="col-5 col-md-4">
                 <form action="{{route('revisor.accept_announcement' , ['announcement'=>$announcement_to_check])}}" method="POST">
