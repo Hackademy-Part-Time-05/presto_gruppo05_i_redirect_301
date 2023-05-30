@@ -1,6 +1,12 @@
 <x-main>
+    <section class="position-relative w-100 latest_announcements_section">
+        <div class="custom-shape-divider-bottom-1684350379">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
     <section id="team">
-        <div class="container">
+        <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                   <h2>Il nostro Team</h2>
@@ -44,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 ">
                     <div class="member">
                       <div class="member-img">
                           <img src="https://media.licdn.com/dms/image/D4D35AQH8PS84vaVB2A/profile-framedphoto-shrink_400_400/0/1685470495880?e=1686078000&v=beta&t=ip_PGx3JuCBLGq7gUJ2-lIxbD-yzvw3KW7T4PeywLjA" class="img-fluid" alt="">
@@ -64,4 +70,10 @@
             </div>
         </div>
     </section>
+    <div class="custom-shape-divider-top-1684351062">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
 </x-main>
