@@ -9,6 +9,7 @@ use App\Models\User;
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\ResizeImage;
+use App\Jobs\WatermakLogo;
 use App\Models\Announcement;
 use GuzzleHttp\Psr7\Request;
 use Livewire\WithFileUploads;
@@ -80,9 +81,10 @@ class CreateAnnouncement extends Component
                 
 
                 RemoveFaces::withChain([
-                    new ResizeImage($newImage->path , 400, 300),
                     new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id)
+                    new GoogleVisionLabelImage($newImage->id),
+                    new WatermakLogo($newImage->id),
+                    new ResizeImage($newImage->path , 400, 300)
                 ])->dispatch($newImage->id);
             }
 
