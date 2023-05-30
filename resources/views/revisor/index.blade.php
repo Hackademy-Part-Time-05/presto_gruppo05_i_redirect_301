@@ -47,34 +47,33 @@
           <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
             @foreach ($announcement_to_check->images as $image)
               @if ($image->labels)
-                <b>Immagine {{$loop->index + 1}}</b>
                 <p class="d-inline">{{$image->labels}}</p>
               @endif 
             @endforeach
           </div>
           <br>
-          <h5 class="title-announcement-detail">Revisione immagini</h5>
-          <p>Adulti:
+          <h5 class="title-announcement-detail">{{__('ui.image_review')}}</h5>
+          <p>{{__('ui.Adults')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->adult}}"></span>
             @endforeach
           </p>
-          <p>Satira:
+          <p>{{__('ui.satire')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->spoof}}"></span>
             @endforeach
           </p>
-          <p>Medicina:
+          <p>{{__('ui.medicine')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->medical}}"></span>
             @endforeach
           </p>
-          <p>Violenza:
+          <p>{{__('ui.violence')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->violence}}"></span>
             @endforeach
           </p>
-          <p>Contenuto Ammiccante:
+          <p>{{__('ui.explicit_content')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->racy}}"></span>
             @endforeach

@@ -72,4 +72,12 @@ return[
     'Announcements_to_review'=>'Announcements to review',
     'Announcements_rejected'=>'Announcements rejected',
     'name'=>'Name',
+    'Adults'=>'Adults',
+    'medicine'=>'Medicine',
+    'violence'=>'Violence',
+    'satire'=>'Satire',
+    'explicit_content'=>'Explicit content',
+    'image_review'=>'Image review',
+    'meet_the_team'=>'Meet our team',
+
 ];

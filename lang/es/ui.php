@@ -72,4 +72,11 @@ return[
     'Announcements_to_review'=>'Anuncios para revisar',
     'Announcements_rejected'=>'Anuncios rechazados',
     'name'=>'Nombre de pila',
+    'Adults'=>'Adultos',
+    'medicine'=>'Medicina',
+    'violence'=>'Violencia',
+    'satire'=>'Sàtira',
+    'explicit_content'=>'Contenido explìcito',
+    'image_review'=>'Revision de imagen',
+    'meet_the_team'=>'Conozca a nuestro equipo',
 ];
