@@ -13,7 +13,7 @@ class image extends Model
 
     protected $fillable = ['path'];
 
-    protected $cast= [
+    protected $casts= [
         'labels' => 'array'
     ];
 

@@ -47,12 +47,14 @@
           <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
             @foreach ($announcement_to_check->images as $image)
               @if ($image->labels)
-                <p class="d-inline">{{$image->labels}}</p>
+              @foreach ($image->labels as $label )
+              <p class="d-inline">{{$label}}</p>
+              @endforeach
               @endif 
             @endforeach
           </div>
           <br>
-          <h5 class="title-announcement-detail">{{__('ui.image_review')}}</h5>
+          <h5 class="title-announcement-detail">{{__('ui.Adults')}}</h5>
           <p>{{__('ui.Adults')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->adult}}"></span>
