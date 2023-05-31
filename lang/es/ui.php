@@ -82,4 +82,5 @@ return[
     'the_team'=>'A nuestro Equipo',
     'announcement_viewed'=>'Anuncio mostrado',
     'times'=>'veces',
+    'text_team'=>'Aquí nuestro equipo está formado por 3 personas. Para este proyecto, cada miembro trabajó en grupo, nunca solo, abordando problemas e ideas nunca solos, y aunque tenemos vidas paralelas y compromisos diferentes, amamos cada minuto de nuestro trabajo. El curso está llegando a su fin y estamos listos para dar la bienvenida a nuestro nuevo camino profesional, conscientes de que si todos avanzamos juntos, el éxito llega solo.',
 ];

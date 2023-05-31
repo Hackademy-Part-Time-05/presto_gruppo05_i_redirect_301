@@ -10,9 +10,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                   <h2>{{__('ui.the_team')}}</h2>
-                  <p>Ecco il nostro team è composto da 3 persone. Per questo progetto ciascun membro ha lavorato in gruppo mai da SOLO, affrontando problemi ed idee mai in solitaria e anche se abbiamo vite parallele e impegni diversi abbiamo amato ogni minuto del nostro lavoro. Il corso volge al termine e siamo pronti a dare il benvenuto al nostro nuovo percorso lavorativo, consapevoli che se tutti vanno avanti insieme, allora il successo viene da sé.</p>
                 </div>
             </div>
+            <h4 class="text-white pb-5 text-shadow">{{__('ui.text_team')}}</h4>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="member">

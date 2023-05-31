@@ -82,4 +82,5 @@ return[
     'the_team'=>'Il nostro Team',
     'announcement_viewed'=>'annuncio visualizzato',
     'times'=>'volte',
+    'text_team'=>'Ecco il nostro team è composto da 3 persone. Per questo progetto ciascun membro ha lavorato in gruppo mai da SOLO, affrontando problemi ed idee mai in solitaria e anche se abbiamo vite parallele e impegni diversi abbiamo amato ogni minuto del nostro lavoro. Il corso volge al termine e siamo pronti a dare il benvenuto al nostro nuovo percorso lavorativo, consapevoli che se tutti vanno avanti insieme, allora il successo viene da sé.',
 ];
