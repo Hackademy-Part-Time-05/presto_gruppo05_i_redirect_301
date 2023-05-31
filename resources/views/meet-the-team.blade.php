@@ -10,7 +10,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                   <h2>{{__('ui.the_team')}}</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
+                  <p>Ecco il nostro team è composto da 3 persone. Per questo progetto ciascun membro ha lavorato in gruppo mai da SOLO, affrontando problemi ed idee mai in solitaria e anche se abbiamo vite parallele e impegni diversi abbiamo amato ogni minuto del nostro lavoro. Il corso volge al termine e siamo pronti a dare il benvenuto al nostro nuovo percorso lavorativo, consapevoli che se tutti vanno avanti insieme, allora il successo viene da sé.</p>
                 </div>
             </div>
             <div class="row">
