@@ -7,7 +7,7 @@
                 <h2 class="display-1 mb-3 animated slideInDown fw-bold">{{__('ui.'.$category->name)}}</h2>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="https://www.clickcease.com/blog/wp-content/uploads/2019/10/digital-advertising-display-network.jpg"
+                <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="/media/category details index.png"
                     alt="">
                 {{-- <i class="category-icon fa-solid fa-motorcycle d-none d-lg-block"></i> --}}
             </div>

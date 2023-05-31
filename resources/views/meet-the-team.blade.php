@@ -9,7 +9,7 @@
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <h2>Il nostro Team</h2>
+                  <h2>{{__('ui.the_team')}}</h2>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text</p>
                 </div>
             </div>
@@ -23,7 +23,6 @@
                             <h4>Mattia Pastafiglia</h4>
                             <span>Full stack developer</span>
                             <div class="social-links">
-                                <a href="https://www.facebook.com/MattiaPastafiglia/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://github.com/max5oooooo"><i class="fab fa-github"></i></a>
                                 <a href="https://www.linkedin.com/in/mattia-pastafiglia-75909a252/"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="https://www.instagram.com/mattiapastafiglia/"><i class="fab fa-instagram"></i></a>
@@ -41,10 +40,9 @@
                             <h4>Elia Bergamelli</h4>
                             <span>Full stack developer</span>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/EliaBergamelli"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/elia-bergamelli/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/_eliabergamelli_/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -59,10 +57,9 @@
                             <h4>Andrea Luccadi</h4>
                             <span>Full stack developer</span>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/andrealuccadi"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/andrea-luccadi-30426b270/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/andrea_luccadi/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
