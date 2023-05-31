@@ -41,8 +41,9 @@ class WatermakLogo implements ShouldQueue
 
         $image->watermark('resources/img/Presto logo Main.png')
                 ->watermarkPosition(Manipulations::POSITION_BOTTOM_RIGHT)
-                ->watermarkHeight(30, Manipulations::UNIT_PERCENT)
-                ->watermarkWidth(30, Manipulations::UNIT_PERCENT);
+                ->watermarkHeight(20, Manipulations::UNIT_PERCENT)
+                ->watermarkWidth(30, Manipulations::UNIT_PERCENT)
+                ->watermarkPadding(13, 0, Manipulations::UNIT_PERCENT);
         $image->save($srcPath);
     }
 }
