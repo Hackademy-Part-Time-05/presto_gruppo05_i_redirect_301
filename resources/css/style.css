@@ -924,7 +924,7 @@ html {
 .img-preview {
   width: 100px;
   height: 70px;
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
