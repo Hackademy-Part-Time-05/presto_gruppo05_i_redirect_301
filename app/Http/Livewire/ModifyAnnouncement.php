@@ -78,6 +78,7 @@ class ModifyAnnouncement extends Component
 
     public function save($announcement)
     {
+        dd($announcement);
         $this->validate();
         $category = Category::find($this->category);
         $this->announcement=Announcement::find('id', $announcement->id)->get();

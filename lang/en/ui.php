@@ -82,5 +82,5 @@ return[
     'the_team'=>'Our Team',
     'announcement_viewed'=>'Announcement viewed',
     'times'=>'times',
-
+    'text_team'=>'Here our team consists of 3 people. For this project, each member worked in a group, never alone, tackling problems and ideas never alone, and even though we have parallel lives and different commitments, we loved every minute of our work. The course is coming to an end and we are ready to welcome our new career path, aware that if everyone goes forward together, then success comes by itself.',
 ];

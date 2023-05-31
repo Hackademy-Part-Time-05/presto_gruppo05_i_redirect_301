@@ -13,6 +13,11 @@
   --animali:#2B9EB3;
   --market: #E99234;
 }
+
+
+.text-shadow{
+  text-shadow: #000000 1px 1px 2px;
+}
 /* navbar */
 .navbar{
   transition: .5s;

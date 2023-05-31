@@ -82,4 +82,5 @@ return[
     'the_team'=>'Unser Team',
     'announcement_viewed'=>'Ankündigung angesehen',
     'times'=>'mal',
+    'text_team'=>'Hier besteht unser Team aus 3 Personen. Bei diesem Projekt arbeitete jedes Mitglied in einer Gruppe, nie alleine, ging Probleme und Ideen nie alleine an, und obwohl wir parallele Leben und unterschiedliche Verpflichtungen haben, haben wir jede Minute unserer Arbeit genossen. Der Kurs neigt sich dem Ende zu und wir sind bereit, unseren neuen Karriereweg zu begrüßen, im Bewusstsein, dass der Erfolg von selbst kommt, wenn alle gemeinsam vorankommen.',
 ];
