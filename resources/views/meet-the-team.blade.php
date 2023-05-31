@@ -23,10 +23,10 @@
                             <h4>Mattia Pastafiglia</h4>
                             <span>Full stack developer</span>
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/MattiaPastafiglia/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://github.com/max5oooooo"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/mattia-pastafiglia-75909a252/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/mattiapastafiglia/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <span>Full stack developer</span>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
@@ -60,7 +60,7 @@
                             <span>Full stack developer</span>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
