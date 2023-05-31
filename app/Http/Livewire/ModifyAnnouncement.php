@@ -11,6 +11,7 @@ use GuzzleHttp\Psr7\Request;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ModifyAnnouncement extends Component
 {
@@ -76,20 +77,21 @@ class ModifyAnnouncement extends Component
         }
     }
 
-    public function save($announcement)
+    public function save()
     {
-        dd($announcement);
         $this->validate();
         $category = Category::find($this->category);
-        $this->announcement=Announcement::find('id', $announcement->id)->get();
-
+        
+        dd($this->announcement->images);
+        
         if(count($this->images)){
-            foreach($this->images as $image){
-                // $this->announcement->images()->create(['path'=>$image->store('images', 'public')]); 
+            foreach($this->images as $image) {
+                Storage::delete($image->path);
+                $this->announcement->images()->create(['path'=>$image->store('images', 'public')]); 
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
                 
-                dispatch(new ResizeImage($newImage->path , 400, 300));
+                dispatch(new ResizeImage($newImage->path , 800, 600));
             }
 
             File::deleteDirectory(storage_path("/app/livewire-tmp"));

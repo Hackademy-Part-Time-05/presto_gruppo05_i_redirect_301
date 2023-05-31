@@ -84,7 +84,7 @@ class CreateAnnouncement extends Component
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
                     new WatermakLogo($newImage->id),
-                    new ResizeImage($newImage->path , 400, 300)
+                    new ResizeImage($newImage->path , 800, 600)
                 ])->dispatch($newImage->id);
             }
 

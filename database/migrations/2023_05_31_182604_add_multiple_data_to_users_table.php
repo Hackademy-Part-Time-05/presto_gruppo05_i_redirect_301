@@ -16,9 +16,9 @@ return new class extends Migration
             $table->text('region')->nullable();
             $table->text('city')->nullable();
             $table->text('profession')->nullable();
-            $table->text('profession')->nullable();
-            $table->text('profession')->nullable();
-            
+            $table->text('twitter')->nullable();
+            $table->text('instagram')->nullable();
+            $table->text('facebook')->nullable(); 
         });
     }
 
