@@ -79,4 +79,7 @@ return[
     'explicit_content'=>'Contenuto esplicito',
     'image_review'=>'Revisione delle immagini',
     'meet_the_team'=>'Incontra il nostro team',
+    'the_team'=>'Il nostro Team',
+    'announcement_viewed'=>'annuncio visualizzato',
+    'times'=>'volte',
 ];

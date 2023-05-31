@@ -79,5 +79,8 @@ return[
     'explicit_content'=>'Explicit content',
     'image_review'=>'Image review',
     'meet_the_team'=>'Meet our team',
+    'the_team'=>'Our Team',
+    'announcement_viewed'=>'Announcement viewed',
+    'times'=>'times',
 
 ];

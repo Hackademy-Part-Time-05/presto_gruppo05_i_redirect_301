@@ -29,7 +29,7 @@
           </h5>
           <div class="d-flex justify-content-between flex-wrap">
             <a class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement->category->name)}}</a>
-            <p class=""><em>Annuncio visionato <b>{{$announcement->viewsCounter}}</b> volte</em></p>
+            <p class=""><em>{{__('ui.announcement_viewed')}} <b>{{$announcement->viewsCounter}}</b> {{__('ui.times')}}</em></p>
           </div>
           <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement->title}}</h2>
           <div class="col-lg-7 col-md-7 col-sm-6 p-3">
