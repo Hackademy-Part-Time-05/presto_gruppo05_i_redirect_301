@@ -27,7 +27,7 @@
                             <option value="">{{__('ui.select')}}</option>
                             @foreach ($categories as $category)
                               <option value="{{$category->id}}"
-                                @if ($announcement->category->id == $category->id)
+                                @if ($announcement[0]->category->id == $category->id)
                                     {{'selected'}}
                                 @endif
                                 >
@@ -80,16 +80,16 @@
                             </div> 
                             @enderror
                           </div>
-                      </div>
-                      @if (!empty($images))
-                      <div class="row">
-                        <div class="col-12"><p>{{__('ui.photo_preview')}}:</p>
-                          <div class="row border border-4 border-info rounded shadow py-4">
-                            @foreach ($temporary_images as $key =>$image )
-                            
-                            <div class="col my-3">
-                              <div class="img-preview mx-auto shadow rounded" style="background-image: url({{Storage::url($image->path)}})"></div>
-                              <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>{{__('ui.delete')}}</button>
+                        </div>
+                        @if (!empty($images))
+                        <div class="row">
+                          <div class="col-12"><p>{{__('ui.photo_preview')}}:</p>
+                            <div class="row border border-4 border-info rounded shadow py-4">
+                              @foreach ($temporary_images as $key =>$image )
+                              <div class="col my-3">
+                                <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}})"></div>
+                                {{-- {{dd(Storage::url($image['path']))}} --}}
+                                <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>{{__('ui.delete')}}</button>
                             </div>
                             @endforeach
                           </div>
