@@ -15,15 +15,19 @@
           <ul class="dropdown-menu ">
             <li class="nav-item">
               <x-_locale lang="it"/>
+              <span> {{__('ui.Italian')}}</span>
             </li>
             <li class="nav-item">
               <x-_locale lang="en"/>
+              <span> {{__('ui.English')}}</span>
             </li>
             <li class="nav-item">
               <x-_locale lang="es"/>
+              <span> {{__('ui.Spanish')}}</span>
             </li>
             <li class="nav-item">
               <x-_locale lang="de"/>
+              <span> {{__('ui.German')}}</span>
             </li>
           </ul>
             @guest

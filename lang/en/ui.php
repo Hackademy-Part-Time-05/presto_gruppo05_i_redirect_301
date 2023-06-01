@@ -86,4 +86,8 @@ return[
     'birthday'=>'Birthday',
     'region'=>'Region',
     'city'=>'City',
+    'Italian'=>'ITALIAN',
+    'English'=>'ENGLISH',
+    'Spanish'=>'SPANISH',
+    'German'=>'GERMAN',
 ];
