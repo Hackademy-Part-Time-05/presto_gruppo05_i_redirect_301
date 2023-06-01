@@ -98,7 +98,7 @@
                       <h6 class="mb-0">{{__('ui.Date_of_birth')}}</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                        
+                      {{auth()->user()->bornDate}}
                     </div>
                   </div>
                   <hr>
@@ -107,7 +107,7 @@
                       <h6 class="mb-0">{{__('ui.Region_of_residence')}}</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      
+                      {{auth()->user()->region}}
                     </div>
                   </div>
                   <hr>
@@ -116,7 +116,7 @@
                       <h6 class="mb-0">{{__('ui.City_of_residence')}}</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      
+                      {{auth()->user()->city}}
                     </div>
                   </div>
                   <hr>
