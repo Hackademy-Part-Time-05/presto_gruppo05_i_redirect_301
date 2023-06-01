@@ -852,7 +852,7 @@ DETAILS CAROUSEL (SINGLE PRODUCT)
 
 
 /* ------------------CURSORE------------------- */
-
+/* 
 :root { --size: 30px; }
 html {
   cursor: none;
@@ -890,7 +890,7 @@ html {
 
 .cursor-dot.focus {
   --size: 0;
-}
+} */
 
 /* ------------------FINE CURSORE------------------- */
 
