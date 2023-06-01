@@ -84,4 +84,11 @@ return[
     'times'=>'volte',
     'text_team'=>'Il nostro team è composto da 3 persone. Per questo progetto ciascun membro ha lavorato con il supporto costante dal resto del team, affrontando e condividendo problemi ed idee, e anche se abbiamo vite parallele e impegni diversi abbiamo amato ogni minuto della nostra collaborazione e del nostro lavoro. 
     Il corso volge al termine e siamo pronti a dare il benvenuto al nostro nuovo percorso lavorativo, consapevoli che se collaboriamo, il successo verrà da sé.',
+    'birthday'=>'Compleanno',
+    'region'=>'Regione',
+    'city'=>'Città',
+    'Italian'=>'ITALIANO',
+    'English'=>'INGLESE',
+    'Spanish'=>'SPAGNOLO',
+    'German'=>'TEDESCO',
 ];
