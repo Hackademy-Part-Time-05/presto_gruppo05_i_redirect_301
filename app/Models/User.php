@@ -25,7 +25,7 @@ class User extends Authenticatable
         'facebook',
         'instagram',
         'profession',
-        'birthDate',
+        'bornDate',
         'region',
         'city'
     ];
