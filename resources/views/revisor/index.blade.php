@@ -30,7 +30,7 @@
     </svg>
   </div>
   <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
-    <div class="row align-items-start d-flex justify-content-center g-5">       
+    <div class="row align-items-start d-flex justify-content-center g-5">      
       <x-carousel :images='$announcement_to_check->images' :announcement='$announcement_to_check'></x-carousel>
       <div class="col-lg-5 pt-4 col-md-12 col-sm-12 announcement-detail emulateclick_on_hover h-100 my-2">
         <a class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement_to_check->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement_to_check->category->name)}}</a>

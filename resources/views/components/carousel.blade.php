@@ -9,8 +9,9 @@
                 </div>
                 @else
                 @foreach ($images as $image)
+                {{-- {{dd($image)}}  --}}
                 <div class="carousel-item @if ($loop->index == 0) active @endif" data-slide-number="{{$loop->index}}">
-                    <img src="{{$image->getUrl(400,300)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{$image->getUrl(400,300)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+                    <img src="{{$image->getUrl(800,600)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{$image->getUrl(400,300)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
                 </div>
                 @endforeach
                 @endif
