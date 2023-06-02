@@ -13,7 +13,10 @@ class AnnouncementController extends Controller
     }
 
     public function modifyAnnouncements(Announcement $announcement) {
-        return view('announcements.modify', compact('announcement'));
+        $latestannouncementbyuser = Announcement::where('user_id', $announcement->user->id)->orderBy('created_at', 'desc')->take(1)->get();
+        // dd($latestannouncementbyuser);
+        $announcement->viewsCounter();
+        return view('announcements.modify', compact('announcement', 'latestannouncementbyuser'));
     }
 
     public function showAnnouncement(Announcement $announcement){

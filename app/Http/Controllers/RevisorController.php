@@ -34,6 +34,13 @@ class RevisorController extends Controller
         $announcement->setAccepted(true);
         return redirect()->back()->with('messageS', 'Complimenti ,annuncio accettato');
     }
+
+    public function modifyAnnouncement(Announcement $announcement, Request $request){
+        $announcement->update(['title' => $request->input('title'), 'body' => $request->input('body'), 'price' => $request->input('price')]);
+        $announcement->setAccepted(null);
+        return redirect(route('welcome'))->with('modify', 'Complimenti ,annuncio modificato. E\' stato riportato in revisione!');
+    }
+
     public function rejectAnnouncement(Announcement $announcement){
         $announcement->setAccepted(false);
         return redirect()->back()->with('messageR', 'Complimenti ,annuncio rifiutato');

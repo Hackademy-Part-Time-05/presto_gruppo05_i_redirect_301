@@ -4,6 +4,10 @@
     <div class="flex flex-row justify-center text-center my-2 alert alert-success">
         {{__('ui.well_done_revisor')}}
     </div>
+    @elseif (session()->has('modify'))
+    <div class="flex flex-row justify-center text-center my-2 alert alert-success">
+      {{__('ui.announcement_modified')}}
+    </div>
     @elseif (session()->has('become'))
     <div class="flex flex-row justify-center text-center my-2 alert alert-success">
       {{__('ui.revisor_accepted')}}

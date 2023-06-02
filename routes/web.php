@@ -41,6 +41,9 @@ Route::get('/revisor/dashboard', [RevisorController::class,'dashboard'])->middle
 //accetta annuncio
 Route::patch('/accetta/annuncio/{announcement}',[RevisorController::class,'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
 
+//modifica annuncio
+Route::patch('/modifica/annuncio/{announcement}',[RevisorController::class,'modifyAnnouncement'])->name('revisor.modify_announcement');
+
 //rifiuta annuncio
 Route::patch('/rifiuta/annuncio/{announcement}',[RevisorController::class,'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');
 
