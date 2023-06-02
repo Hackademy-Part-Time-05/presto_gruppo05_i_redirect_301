@@ -90,5 +90,8 @@ return[
     'English'=>'ENGLISH',
     'Spanish'=>'SPANISH',
     'German'=>'GERMAN',
-    'profession'=> '',
+    'profession'=> 'Profession',
+    'author'=>'Author',
+    'title'=>'Title',
+    'Rejected_Ads'=>'Rejected Ads',
 ];

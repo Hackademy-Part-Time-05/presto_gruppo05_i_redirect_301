@@ -147,6 +147,45 @@
           </div>
         </div>
     </div>
+    <div class="accordion accordion-flush m-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            {{__('ui.Rejected_Ads')}}
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><table class="table">
+            <thead>
+              <tr>
+                <th scope="col-2">Id</th>
+                <th scope="col-2">{{__('ui.author')}}</th>
+                <th scope="col-2">{{__('ui.title')}}</th>
+                <th scope="col-2">{{__('ui.category')}}</th>
+                <th scope="col-2">{{__('ui.on')}}</th>
+                <th scope="col-2"></th>
+              </tr>
+            </thead>
+                @foreach ($announcements_rejected as $rejected)
+                <tbody>
+                  <tr>
+                <td>{{$rejected->id}}</th>
+                <td>{{$rejected->user->name}}</td>
+                <td>{{$rejected->title}}</td>
+                <td>{{$rejected->category->name}}</td>
+                <td>{{$rejected->user->created_at->format('d/m/Y')}}</td>
+                <td> <form action="{{route('revisor.set_revisionable', ['announcement'=>$rejected])}}"   method="POST" class="">
+                  @csrf
+                  @method('PATCH')
+                  <button type="submit" class="btn buttonRound btn-danger mt-2 btn-sm w-100">{{__('ui.cancel')}}</button>
+                </form></td>
+              </tr>
+            </tbody>
+                @endforeach
+          </table>
+          </div>
+        </div>
+      </div>
   </div>
   <div class="custom-shape-divider-top-1684351062">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -161,9 +200,48 @@
         </svg>
     </div>
     <div class=" container cards_landscape_wrap-2 w-100 pb-3 mb-5">
-        <div class="row align-content-start justify-content-center g-4">
-    <p class="h1 text-center">{{__('ui.no_announcements_to_review')}}!</p>
-  </div>
+      <div class="row align-content-start justify-content-center g-4">
+      <p class="h1 text-center">{{__('ui.no_announcements_to_review')}}!</p>
+      <div class="accordion accordion-flush m-5 " id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Annunci Rifiutati
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><table class="table">
+              <thead>
+                <tr>
+                  <th scope="col-2">Id</th>
+                  <th scope="col-2">{{__('ui.author')}}</th>
+                  <th scope="col-2">{{__('ui.title')}}</th>
+                  <th scope="col-2">{{__('ui.category')}}</th>
+                  <th scope="col-2">{{__('ui.on')}}</th>
+                  <th scope="col-2"></th>
+                </tr>
+              </thead>
+                  @foreach ($announcements_rejected as $rejected)
+                  <tbody>
+                    <tr>
+                  <td>{{$rejected->id}}</th>
+                  <td>{{$rejected->user->name}}</td>
+                  <td>{{$rejected->title}}</td>
+                  <td>{{$rejected->category->name}}</td>
+                  <td>{{$rejected->user->created_at->format('d/m/Y')}}</td>
+                  <td> <form action="{{route('revisor.set_revisionable', ['announcement'=>$rejected])}}"   method="POST" class="">
+                    @csrf
+                    @method('PATCH')
+                    <button type="submit" class="btn buttonRound btn-danger mt-2 btn-sm w-100">{{__('ui.cancel')}}</button>
+                  </form></td>
+                </tr>
+              </tbody>
+                  @endforeach
+            </table>
+            </div>
+          </div>
+        </div>
+    </div>
   <div class="custom-shape-divider-top-1684351062">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>

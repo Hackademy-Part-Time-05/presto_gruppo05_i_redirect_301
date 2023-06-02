@@ -91,5 +91,8 @@ return[
     'English'=>'INGLESE',
     'Spanish'=>'SPAGNOLO',
     'German'=>'TEDESCO',
-    'profession'=> 'professione',
+    'profession'=> 'Professione',
+    'author'=>'Autore',
+    'title'=>'Titolo',
+    'Rejected_Ads'=>'Annunci Rifiutati',
 ];
