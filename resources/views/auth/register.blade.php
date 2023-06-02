@@ -52,33 +52,6 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="pb-4 fa-brands fa-facebook-f fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="text" name="facebook" id="facebook" class="form-control" />
-                            <label class="form-label" for="facebook">nome utente facebook</label>
-                            @error('facebook')<span class="small text-danger">{{$message}}</span>  
-                            @enderror
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="pb-4 fa-brands fa-twitter fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="text" name="twitter" id="twitter" class="form-control" />
-                            <label class="form-label" for="twitter">nome utente twitter</label>
-                            @error('twitter')<span class="small text-danger">{{$message}}</span>  
-                            @enderror
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fa-brands pb-4 fa-instagram fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="text" name="instagram" id="instagram" class="form-control" />
-                            <label class="form-label" for="instagram">nome utente instagram</label>
-                            @error('instagram')<span class="small text-danger">{{$message}}</span>  
-                            @enderror
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fa-solid pb-4 fa-briefcase fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="text" name="profession" id="profession" class="form-control" />

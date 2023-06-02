@@ -24,9 +24,6 @@ class CreateNewUser implements CreatesNewUsers
             'city' => ['string', 'max:255'],
             'region' => ['string', 'max:255'],
             'profession' => ['string', 'max:255'],
-            'twitter' => ['string', 'max:255'],
-            'instagram' => ['string', 'max:255'],
-            'facebook' => ['string', 'max:255'],
             'bornDate' => ['date'],
             'email' => [
                 'required',
