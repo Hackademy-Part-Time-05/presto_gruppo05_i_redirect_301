@@ -20,6 +20,8 @@ use Laravel\Fortify\Fortify;
 Route::get('/', [Frontcontroller::class, 'welcome'])->name('welcome');
 Route::get('/categoria/{category}', [Frontcontroller::class, 'categoryShow'])->name('categoryShow');
 
+Route::get('/profile', [Frontcontroller::class, 'userShow'])->middleware('auth')->name('userfirstShow');
+
 Route::get('/area-personale/{user_name}', [Frontcontroller::class, 'userShow'])->middleware('auth')->name('userShow');
 
 Route::get('/meet-the-team', [Frontcontroller::class, 'meetTheTeam'])->name('meetTheTeam');
