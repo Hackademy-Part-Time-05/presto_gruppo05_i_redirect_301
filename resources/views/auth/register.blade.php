@@ -16,7 +16,7 @@
                       <form class="mx-1 mx-md-4" action="{{ route("register") }}" method="POST">
                         @csrf
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <i class="fas pb-4 fa-user fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="text" name="name" id="name" class="form-control" />
                             <label class="form-label" for="name">{{__('ui.name')}}</label>
@@ -25,7 +25,7 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <i class="fas pb-4 fa-calendar-days fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="date" name="bornDate" id="bornDate" class="form-control" />
                             <label class="form-label" for="bornDate">{{__('ui.birthday')}}</label>
@@ -34,7 +34,7 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <i class="fas pb-4 fa-city fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="text" name="city" id="city" class="form-control" />
                             <label class="form-label" for="city">{{__('ui.city')}}</label>
@@ -43,7 +43,7 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <i class="fas pb-4 fa-location fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="text" name="region" id="region" class="form-control" />
                             <label class="form-label" for="region">{{__('ui.region')}}</label>
@@ -52,7 +52,43 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <i class="pb-4 fa-brands fa-facebook-f fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" name="facebook" id="facebook" class="form-control" />
+                            <label class="form-label" for="facebook">nome utente facebook</label>
+                            @error('facebook')<span class="small text-danger">{{$message}}</span>  
+                            @enderror
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="pb-4 fa-brands fa-twitter fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" name="twitter" id="twitter" class="form-control" />
+                            <label class="form-label" for="twitter">nome utente twitter</label>
+                            @error('twitter')<span class="small text-danger">{{$message}}</span>  
+                            @enderror
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fa-brands pb-4 fa-instagram fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" name="instagram" id="instagram" class="form-control" />
+                            <label class="form-label" for="instagram">nome utente instagram</label>
+                            @error('instagram')<span class="small text-danger">{{$message}}</span>  
+                            @enderror
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fa-solid pb-4 fa-briefcase fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" name="profession" id="profession" class="form-control" />
+                            <label class="form-label" for="profession">Professione</label>
+                            @error('profession')<span class="small text-danger">{{$message}}</span>  
+                            @enderror
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas pb-4 pb-4 fa-envelope fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="email" name="email" id="email" class="form-control" />
                             <label class="form-label" for="email">Email</label>
@@ -61,7 +97,7 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <i class="fas pb-4 fa-lock fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <input type="password" name="password" id="password" class="form-control" />
                             <label class="form-label" for="password">Password</label>
@@ -70,7 +106,7 @@
                           </div>
                         </div>
                         <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                            <i class="fas pb-4 fa-lock fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0">
                               <input type="password" name="password_confirmation" id="password" class="form-control" />
                               <label class="form-label" for="password">{{__('ui.confirm_password')}}</label>
