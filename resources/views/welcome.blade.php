@@ -1,9 +1,4 @@
 <x-main>
-    @if(session()->has('access.denied'))
-    <div class="flex flex-row justify-center my-2 alert alert-warning">
-        {{session('access.denied')}}
-    </div>
-    @endif
     <section class="position-relative mb-5">
         <x-header/>
         <div class="custom-shape-divider-top-1684349093 mb-5">
