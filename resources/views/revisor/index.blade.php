@@ -44,38 +44,39 @@
           <p class="announcement_detail_body p-3 h-100">
             {{$announcement_to_check->body}}
           </p>
-          <div class="col-md-3"><h5 class="title-announcement-detail">Tags</h5>
-            @foreach ($announcement_to_check->images as $image)
+          <h5 class="title-announcement-detail p-2">Tags</h5>
+            <div class="p-2">
+              @foreach ($announcement_to_check->images as $image)
               @if ($image->labels)
               @foreach ($image->labels as $label )
-              <p class="d-inline">{{$label}}</p>
+              <p class="d-inline">{{$label}},</p>
               @endforeach
               @endif 
             @endforeach
-          </div>
+            </div>
           <br>
-          <h5 class="title-announcement-detail">{{__('ui.Adults')}}</h5>
-          <p>{{__('ui.Adults')}}:
+          <h5 class="title-announcement-detail p-2">{{__('ui.Adults')}}</h5>
+          <p class="px-2">{{__('ui.Adults')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->adult}}"></span>
             @endforeach
           </p>
-          <p>{{__('ui.satire')}}:
+          <p class="px-2">{{__('ui.satire')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->spoof}}"></span>
             @endforeach
           </p>
-          <p>{{__('ui.medicine')}}:
+          <p class="px-2">{{__('ui.medicine')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->medical}}"></span>
             @endforeach
           </p>
-          <p>{{__('ui.violence')}}:
+          <p class="px-2">{{__('ui.violence')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->violence}}"></span>
             @endforeach
           </p>
-          <p>{{__('ui.explicit_content')}}:
+          <p class="px-2">{{__('ui.explicit_content')}}:
             @foreach ($announcement_to_check->images as $image)
               <span class="{{$image->racy}}"></span>
             @endforeach
