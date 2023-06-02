@@ -19,7 +19,8 @@ class RevisorController extends Controller
         } else {
             $latestannouncementbyuser = false;
         }
-        return view('revisor.index', compact('announcement_to_check', 'latestannouncementbyuser'));
+        $announcements_rejected = Announcement::where('is_accepted',false)->get();
+        return view('revisor.index', compact('announcement_to_check', 'latestannouncementbyuser', 'announcements_rejected'));
     }
 
     public function dashboard(){
