@@ -11,7 +11,7 @@
                 @foreach ($images as $image)
                 {{-- {{dd($image)}}  --}}
                 <div class="carousel-item @if ($loop->index == 0) active @endif" data-slide-number="{{$loop->index}}">
-                    <img src="{{$image->getUrl(800,600)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{$image->getUrl(400,300)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+                    <img src="{{$image->getUrl(800,600)}}" class="d-block w-100" alt="{{$announcement->title}}" data-remote="{{$image->getUrl(800,600)}}" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
                 </div>
                 @endforeach
                 @endif
@@ -30,7 +30,7 @@
                         @foreach ($images as $image)
                         <div id="carousel-selector-{{$loop->index}}" class="thumb col-4 col-sm-2 px-1 py-2 @if ($loop->index == 0) selected @endif
                             " data-target="#myCarousel" data-slide-to="{{$loop->index}}">
-                            <img src="{{$image->getUrl(400,300)}}" class="img-fluid" alt="...">
+                            <img src="{{$image->getUrl(800,600)}}" class="img-fluid" alt="...">
                         </div>
                         @endforeach
                         @endif
