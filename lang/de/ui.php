@@ -90,4 +90,5 @@ return[
     'English'=>'ENGLISCH',
     'Spanish'=>'SPANISCH',
     'German'=>'DEUTSCH',
+    'profession'=> 'Beruf',
 ];

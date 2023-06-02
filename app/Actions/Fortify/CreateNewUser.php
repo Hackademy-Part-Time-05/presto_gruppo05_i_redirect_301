@@ -41,9 +41,6 @@ class CreateNewUser implements CreatesNewUsers
             'bornDate' => $input['bornDate'],
             'city' => $input['city'],
             'region' => $input['region'],
-            'instagram' => $input['instagram'],
-            'facebook' => $input['facebook'],
-            'twitter' => $input['twitter'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
         ]);
