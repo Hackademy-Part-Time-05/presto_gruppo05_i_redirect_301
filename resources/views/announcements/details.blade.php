@@ -6,7 +6,7 @@
           <nav aria-label="breadcrumb animated slideInDown">
             <ol class="mt-5 breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="{{Route('welcome')}}" class="text-decoration-none text-dark">Home</a></li>
-              <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-dark">{{__('ui.'.$announcement->category->name)}}</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('categoryShow', ['category' => $announcement->category])}}" class="text-decoration-none text-dark">{{__('ui.'.$announcement->category->name)}}</a></li>
               <li class="breadcrumb-item active text-dark" aria-current="page">{{$announcement->title}}</li>
             </ol>
           </nav>
@@ -28,7 +28,7 @@
           <h5>
           </h5>
           <div class="d-flex justify-content-between flex-wrap">
-            <a class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement->category->name)}}</a>
+            <a href="{{ route('categoryShow', ['category' => $announcement->category])}}" class="btn btn_main btn_categories btn-sm mx-3 mt-2 {{$announcement->category->name}}_background_card buttonRound" type="button">{{__('ui.'.$announcement->category->name)}}</a>
             <p class=""><em>{{__('ui.announcement_viewed')}} <b>{{$announcement->viewsCounter}}</b> {{__('ui.times')}}</em></p>
           </div>
           <h2 class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">{{$announcement->title}}</h2>
