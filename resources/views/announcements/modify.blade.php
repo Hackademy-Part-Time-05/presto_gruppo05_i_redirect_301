@@ -37,18 +37,20 @@
               <form action="{{route('revisor.modify_announcement',['announcement'=>$announcement])}}" method="POST">
                 @csrf
                 @method('PATCH')
-                <input type="text" name="title" value="{{$announcement->title}}" class=" p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">
-                </p>
-                <div class="h-100 ">
-                <p class="announcement_detail_body p-3 h-100">
-                  <input type="text" name='body' value='{{$announcement->body}}'>
-                </p>
-                <h2 class="announcement_detail_price">
-                  <input type="number" name='price' value="{{$announcement->price}}"> €</H2>
+                  <div class="col-sm-10 py-3">
+                    <label for="title">{{__('ui.ad_title')}}</label>
+                    <input type="text" name="title" value="{{$announcement->title}}" class="form-control p-3 col-lg-10 fw-bold col-md-10 col-sm-10 title-announcement-detail">
+                  </div>
+                  <div class="col-sm-10 pt-2 py-3">
+                    <label for="price">{{__('ui.price')}} €</label>
+                    <input type="number" name='price' value="{{$announcement->price}}" class="form-control announcement_detail_price">
                 </div>
-                
-                
-                <button type="submit" class="btn btn-main btn-warning rounded-5 col-7 m-1">{{__('ui.modify')}}</button>
+                  <div class="col-sm-10 pt-2 py-3">
+                    <label for="body">{{__('ui.description')}}</label>
+                      <textarea type="text" name='body'  class="form-control announcement_detail_body p-3 h-100" rows="4"  >{{$announcement->body}}</textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-main btn-warning rounded-5 col-7 m-3 pb-2">{{__('ui.modify')}}</button>
               </form>
             </div>
             

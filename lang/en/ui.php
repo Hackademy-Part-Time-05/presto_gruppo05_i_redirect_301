@@ -94,4 +94,5 @@ return[
     'author'=>'Author',
     'title'=>'Title',
     'Rejected_Ads'=>'Rejected Ads',
+    'announcement_modified'=>'Congratulations edited ad!',
 ];

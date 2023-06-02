@@ -94,4 +94,5 @@ return[
     'author'=>'Autor',
     'title'=>'Titel',
     'Rejected_Ads'=>'Abgelehnte Anzeigen',
+    'announcement_modified'=>'Herzlichen Glückwunsch zur bearbeiteten Anzeige!',
 ];

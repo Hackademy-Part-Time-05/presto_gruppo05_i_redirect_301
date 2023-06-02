@@ -95,4 +95,5 @@ return[
     'author'=>'Autore',
     'title'=>'Titolo',
     'Rejected_Ads'=>'Annunci Rifiutati',
+    'announcement_modified'=>'Complimenti annuncio modificato!',
 ];

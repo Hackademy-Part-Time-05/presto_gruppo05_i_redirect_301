@@ -1,7 +1,7 @@
   <div class="col-md-8 g-3 card_product">
     <div class="row p-2 bg-white border rounded-5 wrapper-shadow">
       <div class="col-md-4 d-flex justify-content-center align-content-center">
-        <img class="img-fluid py-1 img-responsive rounded product-image card-image rounded-4" src=" 
+        <img class="img-fluid py-1 img-responsive rounded product-image card-image rounded-4 my-3" src=" 
         @if ($announcement->images->first() != null)
         {{$announcement->images()->first()->getUrl(800,600)}}
         @else
