@@ -14,7 +14,7 @@
     </div>
     @endif
     @if(session()->has('access.denied'))
-    <div class="flex flex-row justify-center my-2 alert alert-warning">
+    <div class="flex flex-row justify-center my-2 alert alert-warning text-center">
         {{session('access.denied')}}
     </div>
     @endif
