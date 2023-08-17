@@ -39,7 +39,7 @@ class WatermakLogo implements ShouldQueue
 
         $image = SpatieImage::load($srcPath);
 
-        $image->watermark('resources/img/Presto logo Main.png')
+        $image->watermark('resources/img/Presto_logo_Main.png')
                 ->watermarkPosition(Manipulations::POSITION_BOTTOM_RIGHT)
                 ->watermarkHeight(20, Manipulations::UNIT_PERCENT)
                 ->watermarkWidth(20, Manipulations::UNIT_PERCENT)
