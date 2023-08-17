@@ -17,7 +17,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="member">
                       <div class="member-img">
-                          <img src="https://media.licdn.com/dms/image/D4D35AQE72uPACxZ_ug/profile-framedphoto-shrink_800_800/0/1682090432645?e=1686074400&v=beta&t=mEj_hfaKDuX-nYKBm7XTLjIyh1DVWbG6El7gZGC-S7M" class="img-fluid" alt="">
+                          <img src="https://media.licdn.com/dms/image/D4D35AQE72uPACxZ_ug/profile-framedphoto-shrink_800_800/0/1682090432645?e=1692885600&v=beta&t=A5kN47_nUA53m0ISIAbh8M0a6PncwMsRP6BGksblFqs" class="img-fluid" alt="">
                       </div>
                         <div class="member-info">
                             <h4>Mattia Pastafiglia</h4>
@@ -34,7 +34,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="member">
                       <div class="member-img">
-                          <img src="https://media.licdn.com/dms/image/D4D35AQE8shkou8xN9g/profile-framedphoto-shrink_800_800/0/1684152611090?e=1686074400&v=beta&t=b2ODQVfkuM-NwMMbPZLBGKXg9c0UTZy7GqDB07GA-Jk" class="img-fluid" alt="">
+                          <img src="https://media.licdn.com/dms/image/D4D35AQE8shkou8xN9g/profile-framedphoto-shrink_400_400/0/1684152611090?e=1692885600&v=beta&t=KMn7ctY1hlqRjzL7MBji2Ndkv3zs9J36Htk2GS2hZ5Q" class="img-fluid" alt="">
                       </div>
                         <div class="member-info">
                             <h4>Elia Bergamelli</h4>
@@ -51,7 +51,7 @@
                 <div class="col-lg-4 col-md-6 ">
                     <div class="member">
                       <div class="member-img">
-                          <img src="https://media.licdn.com/dms/image/D4D35AQH8PS84vaVB2A/profile-framedphoto-shrink_400_400/0/1685470495880?e=1686078000&v=beta&t=ip_PGx3JuCBLGq7gUJ2-lIxbD-yzvw3KW7T4PeywLjA" class="img-fluid" alt="">
+                          <img src="https://media.licdn.com/dms/image/D4D35AQH8PS84vaVB2A/profile-framedphoto-shrink_800_800/0/1685470495880?e=1692885600&v=beta&t=KGvGiCzmniEfXcfaWEjZact-3FQyPx0pkzD6dVQMoQ0" class="img-fluid" alt="">
                       </div>
                         <div class="member-info">
                             <h4>Andrea Luccadi</h4>
